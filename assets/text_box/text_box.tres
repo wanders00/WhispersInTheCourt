@@ -1,0 +1,10 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dglrjf5f1gth3"]
+
+[ext_resource type="Texture2D" uid="uid://lvppo48i3exd" path="res://assets/text_box/Dialogue border -01.png" id="1_5vjho"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_txjw1"]
+texture = ExtResource("1_5vjho")
+region_rect = Rect2(75, 953, 2681, 842)
+
+[resource]
+Panel/styles/panel = SubResource("StyleBoxTexture_txjw1")
