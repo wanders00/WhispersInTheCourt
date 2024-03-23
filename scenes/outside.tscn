@@ -5804,7 +5804,6 @@ layer_15/tile_data = PackedInt32Array()
 [node name="chimken2" parent="." instance=ExtResource("2_f7u5r")]
 texture_filter = 1
 position = Vector2(278, 118.8)
-scale = Vector2(1, 1)
 
 [node name="pig" parent="." instance=ExtResource("7_xx700")]
 texture_filter = 1
@@ -5856,4 +5855,3 @@ layer_2/tile_data = PackedInt32Array(7, 196611, 4, 131079, 196611, 4, 262151, 19
 
 [node name="Player" parent="." instance=ExtResource("8_ushl6")]
 position = Vector2(160.2, 156.2)
-scale = Vector2(1, 1)
