@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://catu1r4lvj233"]
+
+[ext_resource type="Script" path="res://scripts/military_guy.gd" id="1_gkg4v"]
+[ext_resource type="Texture2D" uid="uid://c2vxwcx1ab13x" path="res://assets/Top_Down_Kingdom_Tileset/Character/military0.png" id="2_ypj02"]
+[ext_resource type="Texture2D" uid="uid://b5xfp6o76ireb" path="res://assets/Top_Down_Kingdom_Tileset/Character/military1.png" id="3_f2vqp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lqai1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ypj02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f2vqp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uaggo"]
+size = Vector2(20, 30)
+
+[node name="MilitaryGuy" type="CharacterBody2D"]
+script = ExtResource("1_gkg4v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lqai1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_uaggo")
