@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://uqpapie2056o" path="res://assets/Top_Down_Kingdom_Tileset/Others/Decor.png" id="4_8xfbk"]
 [ext_resource type="Texture2D" uid="uid://kctvsj2s54k8" path="res://assets/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Tileset.png" id="5_dx42m"]
 [ext_resource type="Texture2D" uid="uid://cncwialgpuv71" path="res://assets/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Character_2.png" id="6_p18ih"]
-[ext_resource type="Texture2D" uid="uid://dfyafgedsb141" path="res://assets/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_1_1.png" id="7_3q22a"]
+[ext_resource type="Texture2D" uid="uid://dg1hpm588pm56" path="res://assets/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/side_torch_1.png" id="7_3q22a"]
 [ext_resource type="PackedScene" uid="uid://by0y16bnc7xsi" path="res://scenes/aristocrat_1.tscn" id="8_1uai0"]
 [ext_resource type="Script" path="res://scripts/aristocrat_1.gd" id="9_bdepf"]
 [ext_resource type="PackedScene" uid="uid://c54h3i5l8ugam" path="res://scenes/duke_of_westword.tscn" id="10_n4iu5"]

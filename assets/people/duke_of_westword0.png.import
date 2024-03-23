@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg81p767pcm2r"
-path="res://.godot/imported/duke_of_westword0.png-93ce8435aa0b9c875e3d59227b73fec4.ctex"
+uid="uid://e2de2wvlh0p5"
+path="res://.godot/imported/duke_of_westword0.png-db9df60fefc8794f4eb82bf3001069f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/people/duke_of_westword0.png"
-dest_files=["res://.godot/imported/duke_of_westword0.png-93ce8435aa0b9c875e3d59227b73fec4.ctex"]
+source_file="res://scenes/duke_of_westword0.png"
+dest_files=["res://.godot/imported/duke_of_westword0.png-db9df60fefc8794f4eb82bf3001069f6.ctex"]
 
 [params]
 
