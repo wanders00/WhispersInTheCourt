@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://duseo4e4ks15d"]
+
+[ext_resource type="Texture2D" uid="uid://db6hgpo66e4u7" path="res://assets/Top_Down_Kingdom_Tileset/Character/kitty_sitting.png" id="1_x0rg0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_va2jw"]
+size = Vector2(25, 25)
+
+[node name="CatBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_x0rg0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -0.5)
+shape = SubResource("RectangleShape2D_va2jw")

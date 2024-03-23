@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://n1rttipesqfx"]
+[gd_scene load_steps=24 format=3 uid="uid://n1rttipesqfx"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_c4dhw"]
 [ext_resource type="Texture2D" uid="uid://c1pi2xlr25ea8" path="res://assets/people/player/player_idle0.png" id="2_x7xd3"]
@@ -103,10 +103,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8qvth"]
-size = Vector2(32, 32)
+size = Vector2(20, 28)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rakul"]
 radius = 23.0217
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_coltw"]
+size = Vector2(26, 29)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_c4dhw")
@@ -117,6 +120,7 @@ animation = &"up"
 frame_progress = 0.854692
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
 shape = SubResource("RectangleShape2D_8qvth")
 
 [node name="Interaction Components" type="Node2D" parent="."]
@@ -147,5 +151,18 @@ text = "test"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Teleport Components" type="Node2D" parent="."]
+
+[node name="Teleport Area" type="Area2D" parent="Teleport Components"]
+texture_filter = 1
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Teleport Components/Teleport Area"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_coltw")
+
 [connection signal="area_entered" from="Interaction Components/Interaction Area" to="." method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="Interaction Components/Interaction Area" to="." method="_on_interaction_area_area_exited"]
+[connection signal="area_entered" from="Teleport Components/Teleport Area" to="." method="_on_teleport_area_area_entered"]

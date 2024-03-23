@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3i7ouqnjeysr"]
+
+[ext_resource type="Texture2D" uid="uid://dl3ij3dv2nh0" path="res://assets/Top_Down_Kingdom_Tileset/Character/king0.png" id="1_7xw5p"]
+[ext_resource type="Texture2D" uid="uid://crjgcpu83xm7g" path="res://assets/Top_Down_Kingdom_Tileset/Character/king1.png" id="2_vxa76"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_geslp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_7xw5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vxa76")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yp7wc"]
+size = Vector2(20, 30)
+
+[node name="KingBody2D" type="CharacterBody2D"]
+
+[node name="KingSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 2
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_geslp")
+frame_progress = 0.674953
+
+[node name="KingCollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_yp7wc")
