@@ -1,15 +1,14 @@
-[gd_scene load_steps=20 format=3 uid="uid://8yh1hegq1mlj"]
+[gd_scene load_steps=19 format=3 uid="uid://8yh1hegq1mlj"]
 
 [ext_resource type="Texture2D" uid="uid://bp20ah8anobcb" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Floor_1.png" id="1_bh466"]
-[ext_resource type="Script" path="res://scenes/throne_room.gd" id="1_iswne"]
 [ext_resource type="Texture2D" uid="uid://uqpapie2056o" path="res://assets/Top_Down_Kingdom_Tileset/Others/Decor.png" id="2_n6pmy"]
 [ext_resource type="Texture2D" uid="uid://88q8qtlxlw1i" path="res://assets/Top_Down_Kingdom_Tileset/Others/throne0.png" id="3_bkrgs"]
 [ext_resource type="PackedScene" uid="uid://b3i7ouqnjeysr" path="res://scenes/king_body_2d.tscn" id="4_yxh8w"]
 [ext_resource type="Texture2D" uid="uid://cyromiqrl0tq4" path="res://assets/Top_Down_Kingdom_Tileset/Others/Garden.png" id="5_46lyl"]
-[ext_resource type="Script" path="res://scenes/king_body_2d.gd" id="5_ie3uh"]
+[ext_resource type="Script" path="res://scripts/king_body_2d.gd" id="6_pip0i"]
 [ext_resource type="PackedScene" uid="uid://bquqduv6w3jft" path="res://scenes/knight_body_2d.tscn" id="7_wf6lv"]
 [ext_resource type="PackedScene" uid="uid://dl8t3jyl18ws5" path="res://scenes/princess_body_2d.tscn" id="9_6a254"]
-[ext_resource type="Script" path="res://scenes/princess_body_2d.gd" id="10_cmf6j"]
+[ext_resource type="Script" path="res://scripts/princess_body_2d.gd" id="9_08dfa"]
 [ext_resource type="PackedScene" uid="uid://duseo4e4ks15d" path="res://scenes/cat_body_2d.tscn" id="11_8pjnd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4t56k"]
@@ -112,7 +111,6 @@ sources/1 = SubResource("TileSetAtlasSource_7j8in")
 [node name="ThroneRoom" type="Node2D"]
 position = Vector2(-1259, -1550)
 scale = Vector2(5, 5)
-script = ExtResource("1_iswne")
 
 [node name="GroundTileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -131,7 +129,7 @@ layer_2/tile_data = PackedInt32Array(327685, 196609, 2, 196613, 196609, 2, 65541
 [node name="KingBody2D" parent="." instance=ExtResource("4_yxh8w")]
 texture_filter = 1
 position = Vector2(407.8, 368)
-script = ExtResource("5_ie3uh")
+script = ExtResource("6_pip0i")
 
 [node name="ThroneTileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -150,7 +148,7 @@ position = Vector2(294.6, 270.2)
 [node name="PrincessBody2D" parent="." instance=ExtResource("9_6a254")]
 texture_filter = 1
 position = Vector2(341.8, 449.2)
-script = ExtResource("10_cmf6j")
+script = ExtResource("9_08dfa")
 
 [node name="CatBody2D" parent="." instance=ExtResource("11_8pjnd")]
 texture_filter = 1

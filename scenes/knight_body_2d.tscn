@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bquqduv6w3jft"]
 
-[ext_resource type="Script" path="res://scenes/knight_body_2d.gd" id="1_1ny5g"]
+[ext_resource type="Script" path="res://scripts/knight_body_2d.gd" id="1_1ny5g"]
 [ext_resource type="Texture2D" uid="uid://blwo2mogoph2t" path="res://assets/Top_Down_Kingdom_Tileset/Character/knight_idle0.png" id="1_g3vnw"]
 [ext_resource type="Texture2D" uid="uid://cvykltxwcmoyx" path="res://assets/Top_Down_Kingdom_Tileset/Character/knight_idle1.png" id="2_8grow"]
 

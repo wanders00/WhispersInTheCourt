@@ -1,11 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://cnu442lajixph"]
 
-[ext_resource type="Script" path="res://scenes/main.gd" id="1_3tlb8"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_473n7"]
 [ext_resource type="Texture2D" uid="uid://ccrbx6w565fwj" path="res://assets/TX Tileset Grass.png" id="1_i0dsc"]
 [ext_resource type="Texture2D" uid="uid://cq4x3bvlfd40l" path="res://assets/TX Tileset Wall.png" id="3_cext7"]
 [ext_resource type="PackedScene" uid="uid://b3i7ouqnjeysr" path="res://scenes/king_body_2d.tscn" id="4_dhe17"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="4_gkroy"]
-[ext_resource type="Script" path="res://scenes/king_body_2d.gd" id="5_rou7j"]
+[ext_resource type="Script" path="res://scripts/king_body_2d.gd" id="5_rou7j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nt1gy"]
 texture = ExtResource("1_i0dsc")
@@ -591,7 +591,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_v7itj")
 
 [node name="Game" type="Node2D"]
-script = ExtResource("1_3tlb8")
+script = ExtResource("1_473n7")
 
 [node name="GroundTileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_011sp")
