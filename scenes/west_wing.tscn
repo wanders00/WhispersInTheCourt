@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://cyromiqrl0tq4" path="res://assets/Top_Down_Kingdom_Tileset/Others/Garden.png" id="3_8lhw3"]
 [ext_resource type="PackedScene" uid="uid://c1lcrvp8go7qd" path="res://scenes/bro_body_2d.tscn" id="4_0ktet"]
 [ext_resource type="Texture2D" uid="uid://cmt5wj4myv5r6" path="res://assets/Top_Down_Kingdom_Tileset/Others/Tree.png" id="4_kkrcn"]
-[ext_resource type="Script" path="res://scenes/bro_body_2d.gd" id="5_ganx3"]
 [ext_resource type="PackedScene" uid="uid://hq7xx147ui3" path="res://scenes/chill_body_2d.tscn" id="6_fsway"]
+[ext_resource type="Script" path="res://scripts/bro_body_2d.gd" id="6_mdord"]
 [ext_resource type="PackedScene" uid="uid://7ma87c3d2sy0" path="res://scenes/bald_body_2d.tscn" id="7_tpdnw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wdrjp"]
@@ -123,7 +123,7 @@ layer_2/tile_data = PackedInt32Array(524290, 6, 0, 589826, 6, 1, 655362, 6, 2, 5
 z_index = 2
 texture_filter = 1
 position = Vector2(264.6, 150.6)
-script = ExtResource("5_ganx3")
+script = ExtResource("6_mdord")
 
 [node name="ChillBody2D" parent="." instance=ExtResource("6_fsway")]
 z_index = 1

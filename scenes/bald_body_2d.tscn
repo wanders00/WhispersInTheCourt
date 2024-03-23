@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://7ma87c3d2sy0"]
 
-[ext_resource type="Script" path="res://scenes/bald_body_2d.gd" id="1_0bddn"]
+[ext_resource type="Script" path="res://scripts/bald_body_2d.gd" id="1_0bddn"]
 [ext_resource type="Texture2D" uid="uid://x7adg3sd10fw" path="res://assets/Top_Down_Kingdom_Tileset/Character/bald_aristocrat0.png" id="1_kwlje"]
 [ext_resource type="Texture2D" uid="uid://y6o5kkniwl2x" path="res://assets/Top_Down_Kingdom_Tileset/Character/bald_aristocrat1.png" id="2_am8pb"]
 

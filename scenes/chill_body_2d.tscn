@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://hq7xx147ui3"]
 
-[ext_resource type="Script" path="res://scenes/chill_body_2d.gd" id="1_or0xj"]
+[ext_resource type="Script" path="res://scripts/chill_body_2d.gd" id="1_or0xj"]
 [ext_resource type="Texture2D" uid="uid://ccqy62k32mxg" path="res://assets/Top_Down_Kingdom_Tileset/Character/chill_dude0.png" id="1_ouf6f"]
 [ext_resource type="Texture2D" uid="uid://cwkb363l02xef" path="res://assets/Top_Down_Kingdom_Tileset/Character/chill_dude1.png" id="2_7n5mr"]
 [ext_resource type="Texture2D" uid="uid://3ut2ojc21dyt" path="res://assets/Top_Down_Kingdom_Tileset/Character/chill_dude2.png" id="3_bfoyt"]
