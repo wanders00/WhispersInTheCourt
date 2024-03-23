@@ -12,7 +12,7 @@ A silly game made in Godot during a GameJam
 
 ### Images
 
-[4K Fantasy Castle Illustration](https://wallpapersden.com/4k-fantasy-castle-illustration-2023-art-wallpaper/1280x720/)
+[https://wallpapersden.com/4k-fantasy-castle-illustration-2023-art-wallpaper/1280x720/](https://wallpapersden.com/4k-fantasy-castle-illustration-2023-art-wallpaper/1280x720/)
 
 ### Fonts
 
