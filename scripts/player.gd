@@ -79,3 +79,15 @@ func execute_interaction():
 			chat_scene.set_options(current.interact_options[0], current.interact_options[1])
 		chat_scene.set_global_key(current.global_key)
 		add_child(chat_scene)
+
+func _on_teleport_area_area_entered(area):
+	Global.x_pos = area.x_pos
+	Global.y_pos = area.y_pos
+	call_deferred("deferred_scene_change", area.new_scene_path)
+
+func deferred_scene_change(new_scene_path):
+	var current_scene = get_tree().current_scene
+	var new_scene = load(new_scene_path).instantiate()
+	get_tree().root.add_child(new_scene)
+	get_tree().current_scene = new_scene
+	current_scene.queue_free()

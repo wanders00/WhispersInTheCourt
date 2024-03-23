@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjh8ys334rguh"]
+[gd_scene load_steps=5 format=3 uid="uid://bov2ruhxvbme5"]
 
 [ext_resource type="Texture2D" uid="uid://bscru7uf3l5r7" path="res://assets/animals/cow/sprite_0.png" id="1_axcgb"]
 [ext_resource type="Texture2D" uid="uid://d26up3rai5txt" path="res://assets/animals/cow/sprite_1.png" id="2_qvw2d"]

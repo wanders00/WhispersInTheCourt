@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://cnu442lajixph"]
+[gd_scene load_steps=25 format=3 uid="uid://cnu442lajixph"]
 
 [ext_resource type="Texture2D" uid="uid://tpg107esom7i" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Castle_1.png" id="1_chlhs"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_w2add"]
 [ext_resource type="Texture2D" uid="uid://bp20ah8anobcb" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Floor_1.png" id="2_slpd0"]
 [ext_resource type="Texture2D" uid="uid://baw6ue8m54dj4" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Grass.png" id="3_pe301"]
 [ext_resource type="Texture2D" uid="uid://dphkfk07dsu67" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Water.png" id="4_26o2x"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://uqpapie2056o" path="res://assets/Top_Down_Kingdom_Tileset/Others/Decor.png" id="8_kijj1"]
 [ext_resource type="Texture2D" uid="uid://cyromiqrl0tq4" path="res://assets/Top_Down_Kingdom_Tileset/Others/Garden.png" id="9_qqrtr"]
 [ext_resource type="PackedScene" uid="uid://bc3d3its0n8no" path="res://scenes/InteractArea.tscn" id="11_cccb1"]
+[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="13_ch1cb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gv5id"]
 texture = ExtResource("1_chlhs")
@@ -275,6 +277,7 @@ sources/10 = SubResource("TileSetAtlasSource_b00vo")
 sources/11 = SubResource("TileSetAtlasSource_ieopp")
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_w2add")
 
 [node name="GroundTileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_nt00a")
@@ -286,7 +289,6 @@ tile_set = SubResource("TileSet_rlp6t")
 format = 2
 
 [node name="Player" parent="." instance=ExtResource("4_gkroy")]
-position = Vector2(96, 0)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
@@ -298,3 +300,8 @@ interact_options = ["xd", "123"]
 first_have_interacted_text = "no you stink"
 second_have_interacted_text = "hello friend"
 global_key = "first"
+
+[node name="TeleportArea" parent="." instance=ExtResource("13_ch1cb")]
+position = Vector2(-80, 0)
+x_pos = 50
+new_scene_path = "res://scenes/outside.tscn"
