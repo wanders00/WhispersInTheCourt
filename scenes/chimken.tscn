@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgopnbm7u73ec"]
+
+[ext_resource type="Script" path="res://scripts/chimken.gd" id="1_632y0"]
+[ext_resource type="Texture2D" uid="uid://cmgfe2xq5iwa3" path="res://assets/animals/chimken/sprite_0.png" id="2_65ijx"]
+[ext_resource type="Texture2D" uid="uid://lgi4xm4ft60q" path="res://assets/animals/chimken/sprite_1.png" id="3_csgc0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yovxt"]
+size = Vector2(24, 29)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mues0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_65ijx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_csgc0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="chimken" type="CharacterBody2D"]
+script = ExtResource("1_632y0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 2.5)
+shape = SubResource("RectangleShape2D_yovxt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_mues0")
