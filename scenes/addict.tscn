@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://bqjn06mtsrjjg"]
+
+[ext_resource type="Script" path="res://scripts/addict.gd" id="1_4fabp"]
+[ext_resource type="Texture2D" uid="uid://ccevqopnwuglc" path="res://assets/people/addict/addict0.png" id="2_m2aqy"]
+[ext_resource type="Texture2D" uid="uid://bssxyui6cywye" path="res://assets/people/addict/addict4.png" id="2_xe8bf"]
+[ext_resource type="Texture2D" uid="uid://b30afqknn3px" path="res://assets/people/addict/addict1.png" id="3_5w83q"]
+[ext_resource type="Texture2D" uid="uid://bwlmgcnrpbdef" path="res://assets/people/addict/addict2.png" id="5_m314d"]
+[ext_resource type="Texture2D" uid="uid://cyr546qcvhs7r" path="res://assets/people/addict/addict3.png" id="6_hrvl5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b85f2"]
+size = Vector2(25, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tocxx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xe8bf")
+}],
+"loop": true,
+"name": &"dead :skull:",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_m2aqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5w83q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_m314d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hrvl5")
+}],
+"loop": true,
+"name": &"dying :nerd:",
+"speed": 5.0
+}]
+
+[node name="addict" type="CharacterBody2D"]
+script = ExtResource("1_4fabp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_b85f2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_tocxx")
+animation = &"dead :skull:"
+frame_progress = 0.282201
