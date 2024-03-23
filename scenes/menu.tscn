@@ -1,8 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://bm2wv0lt2u17u"]
+[gd_scene load_steps=9 format=3 uid="uid://bm2wv0lt2u17u"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_7dxk0"]
 [ext_resource type="FontFile" uid="uid://t2fjywqxql7d" path="res://assets/fonts/KingsAndPirates-p7EAK.ttf" id="2_8371r"]
-[ext_resource type="Texture2D" uid="uid://mbfifb2shosv" path="res://assets/menu_background.jpg" id="2_ud4yw"]
+[ext_resource type="Texture2D" uid="uid://bb8qnlowcxrpe" path="res://assets/menu_background.png" id="3_ik5hf"]
+[ext_resource type="Texture2D" uid="uid://be33tvmrnb61i" path="res://assets/text_box/Game menus-01.png" id="3_vtti6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xoj1i"]
+texture = ExtResource("3_vtti6")
+region_rect = Rect2(80, 4257, 1144, 220)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_01853"]
+texture = ExtResource("3_vtti6")
+region_rect = Rect2(78, 3978, 1146, 220)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wfrwo"]
+texture = ExtResource("3_vtti6")
+region_rect = Rect2(80, 4257, 1144, 220)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qehm3"]
+texture = ExtResource("3_vtti6")
+region_rect = Rect2(78, 3978, 1146, 220)
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -21,8 +38,8 @@ script = ExtResource("1_7dxk0")
 layout_mode = 0
 offset_left = -19.0
 offset_top = -2.0
-offset_right = 452.0
-offset_bottom = 718.0
+offset_right = 384.0
+offset_bottom = 798.0
 theme_override_constants/margin_left = 64
 theme_override_constants/margin_top = 128
 theme_override_constants/margin_bottom = 16
@@ -39,28 +56,25 @@ text = "Whispers in the Court"
 horizontal_alignment = 1
 
 [node name="MarginContainer_PlayBtn" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme_override_constants/margin_top = 32
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer_PlayBtn"]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_xoj1i")
+theme_override_styles/hover = SubResource("StyleBoxTexture_01853")
 text = "Play"
 
 [node name="MarginContainer_Buttons" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/margin_top = 16
+theme_override_constants/margin_top = 8
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer_Buttons"]
-layout_mode = 2
-
-[node name="HowToPlay" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer_Buttons/HBoxContainer"]
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer_Buttons"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "How to play"
-
-[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer_Buttons/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxTexture_wfrwo")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qehm3")
 text = "Exit"
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -69,8 +83,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
-texture = ExtResource("2_ud4yw")
+texture = ExtResource("3_ik5hf")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer_PlayBtn/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer_Buttons/HBoxContainer/HowToPlay" to="." method="_on_how_to_play_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer_Buttons/HBoxContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer_Buttons/Exit" to="." method="_on_exit_pressed"]
