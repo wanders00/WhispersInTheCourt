@@ -22,7 +22,7 @@ A silly game made in Godot during a GameJam
 
 ### Images
 
-[https://wallpapersden.com/4k-fantasy-castle-illustration-2023-art-wallpaper/1280x720/](https://wallpapersden.com/4k-fantasy-castle-illustration-2023-art-wallpaper/1280x720/)
+Background image in menu AI generated from [pixlr.com](https://pixlr.com/image-generator)
 
 ### Fonts
 
