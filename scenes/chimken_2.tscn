@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://beac0ptswgaxp"]
+[gd_scene load_steps=6 format=3 uid="uid://b7j6rcm73nli4"]
 
 [ext_resource type="Script" path="res://scripts/chimken2.gd" id="1_t52p0"]
 [ext_resource type="Texture2D" uid="uid://cmgfe2xq5iwa3" path="res://assets/animals/chimken/sprite_0.png" id="2_aoi6o"]
