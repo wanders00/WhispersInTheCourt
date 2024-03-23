@@ -9,10 +9,9 @@
 script = ExtResource("1_105bk")
 
 [node name="TextBoxContainer" type="MarginContainer" parent="."]
-offset_left = 16.0
-offset_top = 498.0
-offset_right = 1264.0
-offset_bottom = 704.0
+offset_top = 700.0
+offset_right = 1600.0
+offset_bottom = 900.0
 theme_override_constants/margin_left = 0
 theme_override_constants/margin_top = 0
 theme_override_constants/margin_right = 0
@@ -46,7 +45,7 @@ theme_override_font_sizes/font_size = 51
 text = "Q"
 
 [node name="Label" type="Label" parent="TextBoxContainer/Panel/MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(1013, 126)
+custom_minimum_size = Vector2(1500, 126)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
