@@ -1,12 +1,16 @@
-[gd_scene load_steps=15 format=3 uid="uid://8yh1hegq1mlj"]
+[gd_scene load_steps=20 format=3 uid="uid://8yh1hegq1mlj"]
 
 [ext_resource type="Texture2D" uid="uid://bp20ah8anobcb" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Floor_1.png" id="1_bh466"]
 [ext_resource type="Script" path="res://scenes/throne_room.gd" id="1_iswne"]
 [ext_resource type="Texture2D" uid="uid://uqpapie2056o" path="res://assets/Top_Down_Kingdom_Tileset/Others/Decor.png" id="2_n6pmy"]
 [ext_resource type="Texture2D" uid="uid://88q8qtlxlw1i" path="res://assets/Top_Down_Kingdom_Tileset/Others/throne0.png" id="3_bkrgs"]
 [ext_resource type="PackedScene" uid="uid://b3i7ouqnjeysr" path="res://scenes/king_body_2d.tscn" id="4_yxh8w"]
+[ext_resource type="Texture2D" uid="uid://cyromiqrl0tq4" path="res://assets/Top_Down_Kingdom_Tileset/Others/Garden.png" id="5_46lyl"]
 [ext_resource type="Script" path="res://scenes/king_body_2d.gd" id="5_ie3uh"]
 [ext_resource type="PackedScene" uid="uid://bquqduv6w3jft" path="res://scenes/knight_body_2d.tscn" id="7_wf6lv"]
+[ext_resource type="PackedScene" uid="uid://dl8t3jyl18ws5" path="res://scenes/princess_body_2d.tscn" id="9_6a254"]
+[ext_resource type="Script" path="res://scenes/princess_body_2d.gd" id="10_cmf6j"]
+[ext_resource type="PackedScene" uid="uid://duseo4e4ks15d" path="res://scenes/cat_body_2d.tscn" id="11_8pjnd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4t56k"]
 texture = ExtResource("1_bh466")
@@ -59,10 +63,18 @@ texture = ExtResource("3_bkrgs")
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b2j68"]
+texture = ExtResource("5_46lyl")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_towtt"]
 sources/0 = SubResource("TileSetAtlasSource_4t56k")
 sources/1 = SubResource("TileSetAtlasSource_66g7t")
 sources/2 = SubResource("TileSetAtlasSource_a0xsa")
+sources/4 = SubResource("TileSetAtlasSource_b2j68")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_londj"]
 texture = ExtResource("3_bkrgs")
@@ -114,7 +126,7 @@ layer_1/z_index = 1
 layer_1/tile_data = PackedInt32Array(327679, 196608, 1, 262144, 327680, 1, 262143, 196608, 1, 196607, 196608, 1, 131071, 196608, 1, 65535, 196608, 1, 0, 327680, 1, 65536, 327680, 1, 131072, 327680, 1, 196608, 327680, 1, -1, 262144, 0, -65536, 262144, 0, -65535, 262144, 2, -65534, 262144, 2, -65533, 262144, 2, -2, 262144, 2, -3, 262144, 2, -4, 262144, 2, -65538, 327680, 0, -65539, 262144, 0, -65540, 262144, 0, -131071, 196608, 0, -131070, 262144, 0, -131069, 262144, 0, -131068, 262144, 0, -65532, 262144, 2, -5, 262144, 2, -65541, 262144, 0, -65542, 262144, 0, -6, 262144, 2, -131067, 262144, 0, -65531, 262144, 2, 393215, 196608, 1, 327680, 327680, 1, -7, 262144, 2, -9, 262144, 2, -8, 262144, 2, -10, 262144, 2, -11, 262144, 2, -65530, 262144, 2, -65529, 262144, 2, -65528, 262144, 2, -65527, 262144, 2, -65526, 262144, 2, -131066, 262144, 0, -131065, 262144, 0, -131064, 262144, 0, -131063, 262144, 0, -131062, 262144, 0, -65547, 262144, 0, -65546, 262144, 0, -65545, 262144, 0, -65544, 262144, 0, -65543, 262144, 0)
 layer_2/name = "decore"
 layer_2/z_index = 2
-layer_2/tile_data = PackedInt32Array(327685, 196609, 2, 196613, 196609, 2, 65541, 196609, 2, -196603, 196609, 2, -327675, 196609, 2, 393210, 196609, 2, 262138, 196609, 2, 131066, 196609, 2, -131078, 196609, 2, -262150, 196609, 2, 327674, 262145, 2, 196602, 262145, 2, 65530, 262145, 2, -196614, 262145, 2, -327686, 262145, 2, -393211, 262145, 2, -262139, 262145, 2, 5, 262145, 2, 131077, 262145, 2, 262149, 262145, 2, 131063, 196609, 1, 131062, 196609, 1, 262135, 196609, 1, 262134, 196609, 1, 393207, 196609, 1, 393206, 196609, 1, 393208, 262145, 1, 262136, 262145, 1, 131064, 262145, 1, 327687, 131073, 1, 196615, 131073, 1, 65543, 131073, 1, 65544, 196609, 1, 65545, 196609, 1, 65546, 196609, 1, 196618, 196609, 1, 196617, 196609, 1, 196616, 196609, 1, 327688, 196609, 1, 327689, 196609, 1, 327690, 196609, 1, 393205, 196609, 1, 262133, 196609, 1, 131061, 196609, 1)
+layer_2/tile_data = PackedInt32Array(327685, 196609, 2, 196613, 196609, 2, 65541, 196609, 2, -196603, 196609, 2, -327675, 196609, 2, 393210, 196609, 2, 262138, 196609, 2, 131066, 196609, 2, -131078, 196609, 2, -262150, 196609, 2, 327674, 262145, 2, 196602, 262145, 2, 65530, 262145, 2, -196614, 262145, 2, -327686, 262145, 2, -393211, 262145, 2, -262139, 262145, 2, 5, 262145, 2, 131077, 262145, 2, 262149, 262145, 2, 131063, 196609, 1, 131062, 196609, 1, 262135, 196609, 1, 262134, 196609, 1, 393207, 196609, 1, 393206, 196609, 1, 393208, 262145, 1, 262136, 262145, 1, 131064, 262145, 1, 327687, 131073, 1, 196615, 131073, 1, 65543, 131073, 1, 65544, 196609, 1, 65545, 196609, 1, 65546, 196609, 1, 196618, 196609, 1, 196617, 196609, 1, 196616, 196609, 1, 327688, 196609, 1, 327689, 196609, 1, 327690, 196609, 1, 393205, 196609, 1, 262133, 196609, 1, 131061, 196609, 1, 65527, 65540, 0, 196599, 65540, 0, 327671, 65540, 0, 8, 65540, 0, 262152, 65540, 0, 131080, 65540, 0, -327682, 196609, 1, -327681, 196609, 1, -393216, 196609, 1, -393215, 196609, 1, -393214, 196609, 1, -393213, 196609, 1, -393212, 262145, 1, -327684, 196609, 1, -327683, 196609, 1, -327685, 131073, 1)
 
 [node name="KingBody2D" parent="." instance=ExtResource("4_yxh8w")]
 texture_filter = 1
@@ -134,3 +146,12 @@ position = Vector2(416.6, 270.6)
 
 [node name="KnightBody2D2" parent="." instance=ExtResource("7_wf6lv")]
 position = Vector2(294.6, 270.2)
+
+[node name="PrincessBody2D" parent="." instance=ExtResource("9_6a254")]
+texture_filter = 1
+position = Vector2(341.8, 449.2)
+script = ExtResource("10_cmf6j")
+
+[node name="CatBody2D" parent="." instance=ExtResource("11_8pjnd")]
+texture_filter = 1
+position = Vector2(480.4, 474.2)
