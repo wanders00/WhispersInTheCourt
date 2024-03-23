@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://bov2ruhxvbme5"]
+
+[ext_resource type="Texture2D" uid="uid://bscru7uf3l5r7" path="res://assets/animals/cow/sprite_0.png" id="1_axcgb"]
+[ext_resource type="Texture2D" uid="uid://d26up3rai5txt" path="res://assets/animals/cow/sprite_1.png" id="2_qvw2d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rf02m"]
+size = Vector2(33, 27)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bgns0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_axcgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qvw2d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="cow" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_rf02m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_bgns0")
+frame_progress = 0.528073
