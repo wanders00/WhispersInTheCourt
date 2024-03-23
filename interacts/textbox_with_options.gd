@@ -78,6 +78,7 @@ func _process(_delta):
 					else:
 						temp = 2
 					Global.update(global_key, temp)
+					Global.is_interacting = 0
 					queue_free()
 			elif Input.is_action_just_pressed("ui_accept"):
 				change_state(State.READY)

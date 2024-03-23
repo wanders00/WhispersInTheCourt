@@ -39,6 +39,7 @@ func _process(_delta):
 		State.FINISHED:
 			if Input.is_action_just_pressed("ui_accept"):
 				if text_queue.is_empty():
+					Global.is_interacting = 0
 					queue_free()
 					return
 				change_state(State.READY)

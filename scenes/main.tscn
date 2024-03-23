@@ -286,14 +286,15 @@ tile_set = SubResource("TileSet_rlp6t")
 format = 2
 
 [node name="Player" parent="." instance=ExtResource("4_gkroy")]
+position = Vector2(96, 0)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="InteractArea" parent="." instance=ExtResource("11_cccb1")]
-position = Vector2(80, 0)
+position = Vector2(81, 0)
 interact_label = "Press 'E' to interact"
-interact_path = "res://interacts/text_box-2-dialogue.tscn"
 interact_texts = ["Hello", "guys"]
+interact_options = ["xd", "123"]
 first_have_interacted_text = "no you stink"
 second_have_interacted_text = "hello friend"
 global_key = "first"
