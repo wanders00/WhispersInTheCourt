@@ -4,6 +4,7 @@ var speed = 200  # speed in pixels/sec
 
 @onready var all_interactions = []
 @onready var interact_label = $"Interaction Components/InteractLabel"
+@onready var sprite_2d = $Sprite2D
 
 func _ready():
 	update_interactions()
@@ -11,6 +12,18 @@ func _ready():
 func _physics_process(_delta):
 	var direction = Input.get_vector("player_left", "player_right", "player_up", "player_down")
 	velocity = direction * speed
+	
+	if (velocity.x < -1):
+		sprite_2d.play("left")
+	elif (velocity.x > 1):
+		sprite_2d.play("right")
+	elif (velocity.y < -1):
+		sprite_2d.play("up")
+	elif (velocity.y > 1):
+		sprite_2d.play("down")
+	else:
+		sprite_2d.play("default")
+
 	move_and_slide()
 	
 	if Input.is_action_just_pressed("interact"):
