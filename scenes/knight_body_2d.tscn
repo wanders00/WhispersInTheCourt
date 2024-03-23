@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://bquqduv6w3jft"]
+
+[ext_resource type="Script" path="res://scripts/knight_body_2d.gd" id="1_1ny5g"]
+[ext_resource type="Texture2D" uid="uid://blwo2mogoph2t" path="res://assets/Top_Down_Kingdom_Tileset/Character/knight_idle0.png" id="1_g3vnw"]
+[ext_resource type="Texture2D" uid="uid://cvykltxwcmoyx" path="res://assets/Top_Down_Kingdom_Tileset/Character/knight_idle1.png" id="2_8grow"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g58w4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g3vnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8grow")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_spw0x"]
+size = Vector2(27, 28)
+
+[node name="KnightBody2D" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_1ny5g")
+
+[node name="KnightSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(52, 71)
+sprite_frames = SubResource("SpriteFrames_g58w4")
+frame_progress = 0.378951
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(52.5, 71)
+shape = SubResource("RectangleShape2D_spw0x")
