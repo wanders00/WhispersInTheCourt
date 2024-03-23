@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://b08veuohmngkq"]
+
+[ext_resource type="Texture2D" uid="uid://bxhk2dbqm4jl7" path="res://assets/people/prince/emo0.png" id="1_q8o8n"]
+[ext_resource type="Texture2D" uid="uid://bay14hyoo48pi" path="res://assets/people/prince/emo1.png" id="2_snc7f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mexn"]
+size = Vector2(20, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d06dm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q8o8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_snc7f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_7mexn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_d06dm")
