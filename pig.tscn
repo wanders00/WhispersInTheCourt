@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbsktm4xl7npg"]
+
+[ext_resource type="Script" path="res://scenes/pig.gd" id="1_av0gl"]
+[ext_resource type="Texture2D" uid="uid://bb5pyjb8ci52w" path="res://assets/animals/pig/sprite_0.png" id="1_bq2v3"]
+[ext_resource type="Texture2D" uid="uid://fkkbdg0tuebh" path="res://assets/animals/pig/sprite_1.png" id="2_15pm4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qo4b2"]
+size = Vector2(30, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pve4b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_15pm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_bq2v3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="pig" type="CharacterBody2D"]
+script = ExtResource("1_av0gl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_qo4b2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_pve4b")
+frame_progress = 0.294782

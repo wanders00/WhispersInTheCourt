@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://8i445djyug3k"]
+
+[ext_resource type="Theme" uid="uid://dglrjf5f1gth3" path="res://assets/text_box/text_box.tres" id="1_8cmqx"]
+[ext_resource type="FontFile" uid="uid://bek1ov0c2vxqv" path="res://assets/text_box/Genealogy1-ldpV.ttf" id="2_7hwxi"]
+[ext_resource type="FontFile" uid="uid://bw3od5p7wgib5" path="res://assets/text_box/MedievalTimeline-DOPRE.ttf" id="3_ffjq3"]
+
+[sub_resource type="FontVariation" id="FontVariation_cxvtd"]
+base_font = ExtResource("2_7hwxi")
+
+[node name="TextBox" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_top = 498.0
+offset_right = 1280.0
+offset_bottom = 720.0
+size_flags_vertical = 8
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Panel" type="Panel" parent="MarginContainer/MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("1_8cmqx")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MarginContainer/Panel"]
+layout_mode = 0
+offset_right = 1246.0
+offset_bottom = 203.0
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 69
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="start" type="Label" parent="MarginContainer/MarginContainer/Panel/MarginContainer/HBoxContainer"]
+texture_filter = 1
+texture_repeat = 1
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_cxvtd")
+theme_override_font_sizes/font_size = 51
+text = "Q"
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer/Panel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("3_ffjq3")
+theme_override_font_sizes/font_size = 25
+text = "Hello my peasant, welcome to my castle! :)"
+
+[node name="end" type="Label" parent="MarginContainer/MarginContainer/Panel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_cxvtd")
+theme_override_font_sizes/font_size = 38
+text = "J"
