@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm2wv0lt2u17u"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_7dxk0"]
+[ext_resource type="FontFile" uid="uid://t2fjywqxql7d" path="res://assets/fonts/KingsAndPirates-p7EAK.ttf" id="2_8371r"]
+[ext_resource type="Texture2D" uid="uid://mbfifb2shosv" path="res://assets/menu_background.jpg" id="2_ud4yw"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = 2.0
+offset_right = 19.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7dxk0")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = -19.0
+offset_top = -2.0
+offset_right = 452.0
+offset_bottom = 718.0
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 128
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_8371r")
+theme_override_font_sizes/font_size = 25
+text = "Whispers in the Court"
+horizontal_alignment = 1
+
+[node name="MarginContainer_PlayBtn" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 32
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer_PlayBtn"]
+layout_mode = 2
+text = "Play"
+
+[node name="MarginContainer_Buttons" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer_Buttons"]
+layout_mode = 2
+
+[node name="HowToPlay" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer_Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "How to play"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer_Buttons/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Exit"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("2_ud4yw")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer_PlayBtn/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer_Buttons/HBoxContainer/HowToPlay" to="." method="_on_how_to_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer_Buttons/HBoxContainer/Exit" to="." method="_on_exit_pressed"]
