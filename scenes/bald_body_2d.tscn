@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://7ma87c3d2sy0"]
+
+[ext_resource type="Script" path="res://scripts/bald_body_2d.gd" id="1_0bddn"]
+[ext_resource type="Texture2D" uid="uid://x7adg3sd10fw" path="res://assets/Top_Down_Kingdom_Tileset/Character/bald_aristocrat0.png" id="1_kwlje"]
+[ext_resource type="Texture2D" uid="uid://y6o5kkniwl2x" path="res://assets/Top_Down_Kingdom_Tileset/Character/bald_aristocrat1.png" id="2_am8pb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f0rho"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kwlje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_am8pb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_adbvq"]
+size = Vector2(20, 28)
+
+[node name="BaldBody2D" type="CharacterBody2D"]
+script = ExtResource("1_0bddn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_f0rho")
+frame_progress = 0.107173
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_adbvq")

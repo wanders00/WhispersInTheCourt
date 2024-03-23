@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1lcrvp8go7qd"]
+
+[ext_resource type="Texture2D" uid="uid://ttkvnemp4xbw" path="res://assets/Top_Down_Kingdom_Tileset/Character/finance_bro0.png" id="1_dtgi2"]
+[ext_resource type="Texture2D" uid="uid://tvcrh6br7osn" path="res://assets/Top_Down_Kingdom_Tileset/Character/finance_bro1.png" id="2_8qau0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q0qs1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dtgi2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8qau0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7pb6i"]
+size = Vector2(20, 30)
+
+[node name="BroBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_q0qs1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7pb6i")
