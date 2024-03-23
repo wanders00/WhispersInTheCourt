@@ -12,6 +12,9 @@ func _ready():
 func _physics_process(_delta):
 	var direction = Input.get_vector("player_left", "player_right", "player_up", "player_down")
 	velocity = direction * speed
+	if Global.is_interacting != 0:
+		velocity.x = 0
+		velocity.y = 0
 	
 	if (velocity.x < -1):
 		sprite_2d.play("left")
@@ -45,6 +48,11 @@ func update_interactions():
 
 func execute_interaction():
 	if all_interactions:
+		if Global.is_interacting != 0:
+			return
+		
+		Global.is_interacting = 1
+		
 		var current = all_interactions[0]
 		print("Starting chat scene...")
 		var chat_scene
@@ -59,7 +67,12 @@ func execute_interaction():
 			add_child(chat_scene)
 			return
 		
-		chat_scene = load(current.interact_path).instantiate()
+		if current.interact_options:
+			chat_scene = load("res://interacts/text_box-2-dialogue.tscn").instantiate()
+			chat_scene.set_options(current.interact_options[0], current.interact_options[1])
+		else:
+			chat_scene = load("res://interacts/text_box-no-dialogue.tscn").instantiate()
+		
 		for text in current.interact_texts:
 			chat_scene.queue_text(text)
 		if current.interact_options:

@@ -1,5 +1,7 @@
 extends Node
 
+var is_interacting = 0
+
 # 0 = have not interacted
 # 1 = first option
 # 2 = second option
