@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgvro04aepp61"]
+
+[ext_resource type="Script" path="res://scripts/female_aristocrat.gd" id="1_ia8ex"]
+[ext_resource type="Texture2D" uid="uid://cu745u4cpy2q1" path="res://assets/Top_Down_Kingdom_Tileset/Character/female_aristocrat0.png" id="1_ujaju"]
+[ext_resource type="Texture2D" uid="uid://cvj86xwlvemky" path="res://assets/Top_Down_Kingdom_Tileset/Character/female_aristocrat1.png" id="2_6evcv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tavfj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ujaju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6evcv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y0c63"]
+size = Vector2(32, 27)
+
+[node name="FemaleAristocrat" type="CharacterBody2D"]
+script = ExtResource("1_ia8ex")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_tavfj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_y0c63")
