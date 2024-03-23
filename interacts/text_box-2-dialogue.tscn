@@ -13,10 +13,9 @@ base_font = ExtResource("2_v62d6")
 script = ExtResource("1_xmn1y")
 
 [node name="TextBoxContainer" type="MarginContainer" parent="."]
-offset_left = 16.0
-offset_top = 498.0
-offset_right = 1264.0
-offset_bottom = 704.0
+offset_top = 700.0
+offset_right = 1600.0
+offset_bottom = 900.0
 theme_override_constants/margin_left = 0
 theme_override_constants/margin_top = 0
 theme_override_constants/margin_right = 0
@@ -69,10 +68,9 @@ theme_override_font_sizes/font_size = 38
 text = "J"
 
 [node name="OptionsContainer" type="MarginContainer" parent="."]
-offset_left = 18.0
-offset_top = 445.0
-offset_right = 1260.0
-offset_bottom = 493.0
+offset_top = 620.0
+offset_right = 1600.0
+offset_bottom = 670.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="OptionsContainer"]
 layout_mode = 2
