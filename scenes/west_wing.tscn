@@ -220,7 +220,6 @@ texture = ExtResource("4_kkrcn")
 2:0/0 = 0
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
@@ -352,12 +351,13 @@ tile_set = SubResource("TileSet_a4vl3")
 format = 2
 layer_0/tile_data = PackedInt32Array(327687, 131072, 3, 327686, 131072, 3, 327688, 131072, 3, 327689, 131072, 3, 1, 65536, 0, 3, 65536, 0, 5, 65536, 0, 7, 65536, 0, 9, 65536, 0, 8, 0, 1, 6, 0, 1, 4, 0, 1, 2, 0, 1)
 
-[node name="BaldBody2D" parent="." instance=ExtResource("7_tpdnw")]
-z_index = 2
-texture_filter = 1
-position = Vector2(134.8, 130.8)
-
 [node name="Player" parent="." instance=ExtResource("9_eij0e")]
 z_index = 2
 texture_filter = 1
 position = Vector2(96.4, 123.4)
+scale = Vector2(1, 1)
+
+[node name="BaldBody2D" parent="." instance=ExtResource("7_tpdnw")]
+z_index = 2
+texture_filter = 1
+position = Vector2(134.8, 130.8)
