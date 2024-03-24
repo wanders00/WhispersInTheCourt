@@ -1,0 +1,13 @@
+~ east_wing_female_aristocrat
+if Global.get_value("east_wing_female_aristocrat") == 0
+	Dame Eloise: They say the Sir Geoffrey, has been seen at the docks late at night. Could be harmless smuggling, could be espionage. In these times, who can tell the difference?
+	set Global.update("east_wing_female_aristocrat", 1)
+else if Global.get_value("east_wing_female_aristocrat") == 1
+	Dame Eloise: The young Duke of Westford seems to have taken a liking to the arts. I've heard he eats the crayons sometimes.
+	set Global.update("east_wing_female_aristocrat", 2)
+else if Global.get_value("east_wing_female_aristocrat") == 2
+	Dame Eloise: I don't have anymore gossip for you.
+
+set Global.is_interacting = 0
+
+=> END

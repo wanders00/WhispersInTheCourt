@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://bbj0uqi72v125"]
+[gd_scene load_steps=46 format=3 uid="uid://bbj0uqi72v125"]
 
 [ext_resource type="Script" path="res://scenes/outside.gd" id="1_ot8rp"]
 [ext_resource type="Texture2D" uid="uid://baw6ue8m54dj4" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Grass.png" id="1_wudoa"]
@@ -20,8 +20,9 @@
 [ext_resource type="Script" path="res://scenes/cow.gd" id="10_8ijs1"]
 [ext_resource type="Texture2D" uid="uid://b83ir72aqrua3" path="res://assets/initial/TX Plant.png" id="11_lcuk2"]
 [ext_resource type="PackedScene" uid="uid://c0hgo7ka1ue74" path="res://scenes/chimken.tscn" id="12_lmtwp"]
-[ext_resource type="PackedScene" path="res://scenes/addict.tscn" id="21_4bfa1"]
+[ext_resource type="PackedScene" uid="uid://d1oy5cnby5gkd" path="res://scenes/addict.tscn" id="21_4bfa1"]
 [ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="22_3qtyn"]
+[ext_resource type="PackedScene" uid="uid://bc3d3its0n8no" path="res://scenes/InteractArea.tscn" id="23_gcgvv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gd2yt"]
 texture = ExtResource("2_mwyag")
@@ -5863,3 +5864,9 @@ position = Vector2(136.8, -11.6)
 x_pos = 160
 y_pos = 151
 new_scene_path = "res://scenes/entrance.tscn"
+
+[node name="InteractArea_Addict" parent="." instance=ExtResource("23_gcgvv")]
+position = Vector2(89.8, 86.4)
+interact_label = "Press 'E' to interact"
+dialogue_path = "res://interacts/outside_addict.dialogue"
+dialogue_name = "outside_addict"

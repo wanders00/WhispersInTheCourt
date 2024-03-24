@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bqjn06mtsrjjg"]
+[gd_scene load_steps=9 format=3 uid="uid://d1oy5cnby5gkd"]
 
 [ext_resource type="Script" path="res://scripts/addict.gd" id="1_4fabp"]
 [ext_resource type="Texture2D" uid="uid://ccevqopnwuglc" path="res://assets/people/addict/addict0.png" id="2_m2aqy"]
@@ -53,5 +53,4 @@ shape = SubResource("RectangleShape2D_b85f2")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_tocxx")
-animation = &"dead :skull:"
-frame_progress = 0.282201
+animation = &"dying :nerd:"
