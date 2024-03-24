@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dyexc1f3xus1q"
+path="res://.godot/imported/outside_addict.dialogue-370b014e9d252147ec4bd624a2a6587b.tres"
+
+[deps]
+
+source_file="res://interacts/outside_addict.dialogue"
+dest_files=["res://.godot/imported/outside_addict.dialogue-370b014e9d252147ec4bd624a2a6587b.tres"]
+
+[params]
+
+defaults=true
