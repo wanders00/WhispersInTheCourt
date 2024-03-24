@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://vewrbagolm4" path="res://assets/outside/Tiny Wonder Farm Free/Tiny Wonder Farm Free/objects&items/items free.png" id="5_3wruf"]
 [ext_resource type="Texture2D" uid="uid://c3wpobu00tx1m" path="res://assets/initial/apple.png" id="5_qk8v7"]
 [ext_resource type="Texture2D" uid="uid://cuiplnnehqehs" path="res://assets/outside/Tiny Wonder Farm Free/Tiny Wonder Farm Free/objects&items/plants free.png" id="6_ywmnl"]
-[ext_resource type="PackedScene" path="res://pig.tscn" id="7_xx700"]
+[ext_resource type="PackedScene" uid="uid://cbsktm4xl7npg" path="res://pig.tscn" id="7_xx700"]
 [ext_resource type="Texture2D" uid="uid://ccrbx6w565fwj" path="res://assets/initial/TX Tileset Grass.png" id="8_57jky"]
 [ext_resource type="Script" path="res://scenes/pig2.gd" id="8_strgi"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="8_ushl6"]
@@ -5830,6 +5830,7 @@ texture_filter = 1
 position = Vector2(289.4, 136.2)
 
 [node name="TileMap2" type="TileMap" parent="."]
+texture_filter = 1
 scale = Vector2(0.5, 0.5)
 tile_set = SubResource("TileSet_vhji0")
 format = 2
