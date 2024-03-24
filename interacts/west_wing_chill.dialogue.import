@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dm86we3bxbnr7"
+path="res://.godot/imported/west_wing_chill.dialogue-395a9fe85674c1f35c682384b7e2183b.tres"
+
+[deps]
+
+source_file="res://interacts/west_wing_chill.dialogue"
+dest_files=["res://.godot/imported/west_wing_chill.dialogue-395a9fe85674c1f35c682384b7e2183b.tres"]
+
+[params]
+
+defaults=true

@@ -18,8 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://scripts/global_variables.gd"
-BackgroundMusic="*res://scripts/backgroundMusic.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+BackgroundMusic="*res://scripts/backgroundMusic.gd"
 
 [display]
 
@@ -60,7 +60,7 @@ interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://interacts/a.dialogue", "res://interacts/entrance_geoffrey.dialogue", "res://interacts/entrance_duke.dialogue", "res://interacts/runes.dialogue", "res://interacts/mongus.dialogue")
+locale/translations_pot_files=PackedStringArray("res://interacts/a.dialogue", "res://interacts/entrance_geoffrey.dialogue", "res://interacts/entrance_duke.dialogue", "res://interacts/runes.dialogue", "res://interacts/mongus.dialogue", "res://interacts/training_area_cat.dialogue", "res://interacts/training_area_prince.dialogue", "res://interacts/outside_addict.dialogue", "res://interacts/east_wing_duck.dialogue", "res://interacts/east_wing_weapons_master.dialogue", "res://interacts/east_wing_female_aristocrat.dialogue", "res://interacts/west_wing_chill.dialogue", "res://interacts/west_wing_bro.dialogue", "res://interacts/west_wing_aristocrat.dialogue")
 
 [layer_names]
 

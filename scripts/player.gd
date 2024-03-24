@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed = 200  # speed in pixels/sec
+var speed = 275  # speed in pixels/sec
 
 @onready var all_interactions = []
 @onready var interact_label = $"Interaction Components/InteractLabel"

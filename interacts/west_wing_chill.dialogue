@@ -1,0 +1,18 @@
+~ main
+if (Global.get_value("west_wing_chill") == 0):
+	Chill merchant: sup dude! i simply partake in the exchange of legal tender for desired goods! wanna buy some?
+	- No thanks.
+		set Global.update("west_wing_chill", 1)
+	- Sure!
+		set Global.update("west_wing_chill", 1)
+		Chill merchant: wait you're not a narc are you? nvm go away!
+
+elif (Global.get_value("west_wing_chill") == 1):
+	Chill merchant: dawg, we gotta improve the economic situation of the crown. the royals have stopped purchasing my herbs
+	set Global.update("west_wing_chill", 2)
+else:
+	Chill merchant: i have herbs and spices, for a good price.
+
+set Global.is_interacting = 0
+
+=> END

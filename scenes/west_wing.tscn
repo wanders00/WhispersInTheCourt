@@ -8,10 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://c1lcrvp8go7qd" path="res://scenes/bro_body_2d.tscn" id="4_0ktet"]
 [ext_resource type="Texture2D" uid="uid://cmt5wj4myv5r6" path="res://assets/Top_Down_Kingdom_Tileset/Others/Tree.png" id="4_kkrcn"]
 [ext_resource type="PackedScene" uid="uid://hq7xx147ui3" path="res://scenes/chill_body_2d.tscn" id="6_fsway"]
-[ext_resource type="Script" path="res://scripts/bro_body_2d.gd" id="6_mdord"]
 [ext_resource type="PackedScene" uid="uid://7ma87c3d2sy0" path="res://scenes/bald_body_2d.tscn" id="7_tpdnw"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="9_eij0e"]
 [ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="12_mayfi"]
+[ext_resource type="PackedScene" uid="uid://bc3d3its0n8no" path="res://scenes/InteractArea.tscn" id="13_mi2ho"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wdrjp"]
 texture = ExtResource("1_wy3gv")
@@ -339,7 +339,6 @@ layer_2/tile_data = PackedInt32Array(524290, 6, 0, 589826, 6, 1, 655362, 6, 2, 5
 z_index = 2
 texture_filter = 1
 position = Vector2(264.6, 150.6)
-script = ExtResource("6_mdord")
 
 [node name="ChillBody2D" parent="." instance=ExtResource("6_fsway")]
 z_index = 1
@@ -357,7 +356,7 @@ layer_0/tile_data = PackedInt32Array(327687, 131072, 3, 327686, 131072, 3, 32768
 [node name="Player" parent="." instance=ExtResource("9_eij0e")]
 z_index = 2
 texture_filter = 1
-position = Vector2(202.6, 112.4)
+position = Vector2(209.2, 112.4)
 
 [node name="BaldBody2D" parent="." instance=ExtResource("7_tpdnw")]
 z_index = 2
@@ -369,3 +368,22 @@ position = Vector2(324.4, 95.4)
 x_pos = 273
 y_pos = 375
 new_scene_path = "res://scenes/throne_room.tscn"
+
+[node name="InteractArea" parent="." instance=ExtResource("13_mi2ho")]
+position = Vector2(48.8, 117.6)
+interact_label = "Press E to interact"
+dialogue_path = "res://interacts/west_wing_chill.dialogue"
+dialogue_name = "main"
+
+[node name="InteractArea2" parent="." instance=ExtResource("13_mi2ho")]
+position = Vector2(264.2, 149.4)
+scale = Vector2(1, 1)
+interact_label = "Press E to interact"
+dialogue_path = "res://interacts/west_wing_bro.dialogue"
+dialogue_name = "main"
+
+[node name="InteractArea3" parent="." instance=ExtResource("13_mi2ho")]
+position = Vector2(135, 131.2)
+interact_label = "Press E to interact"
+dialogue_path = "res://interacts/west_wing_aristocrat.dialogue"
+dialogue_name = "main"

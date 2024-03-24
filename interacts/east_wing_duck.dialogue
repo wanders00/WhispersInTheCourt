@@ -1,0 +1,6 @@
+~ east_wing_duck
+Duck: Quack
+
+set Global.is_interacting = 0
+
+=> END
