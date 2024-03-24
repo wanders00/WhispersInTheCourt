@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://we83gprrh6tr"
+path="res://.godot/imported/east_wing_weapons_master.dialogue-583ce91c6e2be447efded1c47937300c.tres"
+
+[deps]
+
+source_file="res://interacts/east_wing_weapons_master.dialogue"
+dest_files=["res://.godot/imported/east_wing_weapons_master.dialogue-583ce91c6e2be447efded1c47937300c.tres"]
+
+[params]
+
+defaults=true

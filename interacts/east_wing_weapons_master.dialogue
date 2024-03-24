@@ -1,0 +1,12 @@
+~ east_wing_weapons_master
+if Global.get_value("east_wing_weapons_master") == 1
+	Weapons Master: If we must prioritize the safety of our kingdom from invasion. We could impose military conscription, but the people might not like it
+	set Global.update("east_wing_weapons_master", 2)
+else if Global.get_value("east_wing_weapons_master") == 0
+	Weapons Master: I’ve been planning an improved training regimen. Implementing it might improve our knights prowess
+	set Global.update("east_wing_weapons_master", 1)
+else if Global.get_value("east_wing_weapons_master") == 2
+	Weapons Master: No matter how much you try talk to me, I'm not gonna tell you this kingdoms military tactics
+set Global.is_interacting = 0
+
+=> END

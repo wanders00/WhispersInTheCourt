@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://c2q45gstnifye"]
+[gd_scene load_steps=27 format=3 uid="uid://c2q45gstnifye"]
 
 [ext_resource type="Script" path="res://scripts/east_wing.gd" id="1_15tse"]
 [ext_resource type="Texture2D" uid="uid://bp20ah8anobcb" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Floor_1.png" id="1_jyp5j"]
@@ -12,7 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://bk73llxw1eglb" path="res://scenes/goose.tscn" id="9_d4675"]
 [ext_resource type="PackedScene" uid="uid://dgvro04aepp61" path="res://scenes/female_aristocrat.tscn" id="10_i7jl5"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="11_pmwm1"]
-[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="12_yv504"]
+[ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="12_yv504"]
+[ext_resource type="PackedScene" uid="uid://bc3d3its0n8no" path="res://scenes/InteractArea.tscn" id="14_o1gu5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ylpbl"]
 texture = ExtResource("1_jyp5j")
@@ -2296,13 +2297,33 @@ texture_filter = 1
 position = Vector2(204.4, 74.6)
 
 [node name="TeleportArea" parent="." instance=ExtResource("12_yv504")]
+visible = false
 position = Vector2(-10.8, 78.6)
 x_pos = 546
 y_pos = 377
 new_scene_path = "res://scenes/throne_room.tscn"
 
 [node name="TeleportArea2" parent="." instance=ExtResource("12_yv504")]
+visible = false
 position = Vector2(331.2, 79.4)
 x_pos = 23
 y_pos = 95
 new_scene_path = "res://scenes/training_area.tscn"
+
+[node name="MilitaryInteract" parent="." instance=ExtResource("14_o1gu5")]
+position = Vector2(54.4, 38)
+interact_label = "E"
+dialogue_path = "res://interacts/east_wing_weapons_master.dialogue"
+dialogue_name = "east_wing_weapons_master"
+
+[node name="duckInteract" parent="." instance=ExtResource("14_o1gu5")]
+position = Vector2(109.8, 97.6)
+interact_label = "E"
+dialogue_path = "res://interacts/east_wing_duck.dialogue"
+dialogue_name = "east_wing_duck"
+
+[node name="AristocratInteract" parent="." instance=ExtResource("14_o1gu5")]
+position = Vector2(279, 98.4)
+interact_label = "E"
+dialogue_path = "res://interacts/east_wing_female_aristocrat.dialogue"
+dialogue_name = "east_wing_female_aristocrat"
