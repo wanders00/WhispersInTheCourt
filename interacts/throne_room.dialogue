@@ -125,9 +125,7 @@ King: Anyone else that should meet the sword!?
 - No. Just that one! (End Game)
 
 King: Time to educate those who tried to wrong me!
-set Global.game_over = 1
-
-set Global.is_interacting = 0
+set get_tree().change_scene_to_file("res://scenes/end_screen.tscn")
 
 => END
 
