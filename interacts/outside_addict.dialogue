@@ -1,0 +1,33 @@
+~ outside_addict
+if Global.get_value("outside_addict") == 0
+	Addict: Hey, wanna buy some apples?
+	- No thanks.
+	- Sure!
+	Addict: They have an interesting taste if they’re brown and bit white!
+	set Global.update("outside_addict", 1)
+elif Global.get_value("outside_addict") == 1
+	Addict: I’m feeling pretty tired, can you tell?
+	Addict: I can’t stop… The taste of bad apples is just too good
+	- Uuuhhhh
+		Addict: *cries*
+		set Global.update("outside_addict", 2)
+	- You have to stop eating rotten apples, they are making you sick
+		Addict: Thank you, I needed to hear that
+		set Global.update("outside_addict", 3)
+elif Global.get_value("outside_addict") == 2
+	Addict: *rip*
+	- * pay your respect *
+	- Uuuhhhh
+elif Global.get_value("outside_addict") == 3
+	Recovering Addict: Hello again!
+	Recovering Addict: Thank you for helping me fix my apple 'problem'.
+	- No worries! Glad to help.
+	- Uuuhhhh
+	Recovering Addict: I'll see you around!
+	set Global.update("outside_addict", 4)
+elif Global.get_value("outside_addict") == 4
+	Recovering Addict: Hello again! Hows the weather?
+
+set Global.is_interacting = 0
+
+=> END
