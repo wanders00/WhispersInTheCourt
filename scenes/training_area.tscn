@@ -1,6 +1,7 @@
-[gd_scene load_steps=25 format=3 uid="uid://caud6ryvxlcus"]
+[gd_scene load_steps=27 format=3 uid="uid://caud6ryvxlcus"]
 
 [ext_resource type="Texture2D" uid="uid://tpg107esom7i" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Castle_1.png" id="1_n8eih"]
+[ext_resource type="Script" path="res://scripts/training_area.gd" id="1_vgeqh"]
 [ext_resource type="Texture2D" uid="uid://dphkfk07dsu67" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Water.png" id="2_2vlgh"]
 [ext_resource type="Texture2D" uid="uid://baw6ue8m54dj4" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Grass.png" id="3_35fcl"]
 [ext_resource type="Texture2D" uid="uid://uqpapie2056o" path="res://assets/Top_Down_Kingdom_Tileset/Others/Decor.png" id="4_m76nm"]
@@ -13,6 +14,7 @@
 [ext_resource type="Script" path="res://scripts/prince.gd" id="11_6ednu"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="12_s57o7"]
 [ext_resource type="PackedScene" uid="uid://dc1k064h2vajw" path="res://scenes/kitty_normal.tscn" id="13_stebg"]
+[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="14_26de6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tg700"]
 texture = ExtResource("1_n8eih")
@@ -3170,6 +3172,7 @@ sources/6 = SubResource("TileSetAtlasSource_gk7ds")
 
 [node name="training_area" type="Node2D"]
 scale = Vector2(5, 5)
+script = ExtResource("1_vgeqh")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -3193,7 +3196,14 @@ position = Vector2(257.2, 45.4)
 script = ExtResource("11_6ednu")
 
 [node name="Player" parent="." instance=ExtResource("12_s57o7")]
-position = Vector2(38.8, 85.4)
+texture_filter = 1
+position = Vector2(185.6, 78.6)
 
 [node name="kitty_normal" parent="." instance=ExtResource("13_stebg")]
 position = Vector2(25.6, 49.4)
+
+[node name="TeleportArea" parent="." instance=ExtResource("14_26de6")]
+position = Vector2(-11.2, 95.4)
+x_pos = 294
+y_pos = 76
+new_scene_path = "res://scenes/east_wing.tscn"

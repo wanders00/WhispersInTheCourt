@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://bbj0uqi72v125"]
+[gd_scene load_steps=45 format=3 uid="uid://bbj0uqi72v125"]
 
 [ext_resource type="Script" path="res://scenes/outside.gd" id="1_ot8rp"]
 [ext_resource type="Texture2D" uid="uid://baw6ue8m54dj4" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Grass.png" id="1_wudoa"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://vewrbagolm4" path="res://assets/outside/Tiny Wonder Farm Free/Tiny Wonder Farm Free/objects&items/items free.png" id="5_3wruf"]
 [ext_resource type="Texture2D" uid="uid://c3wpobu00tx1m" path="res://assets/initial/apple.png" id="5_qk8v7"]
 [ext_resource type="Texture2D" uid="uid://cuiplnnehqehs" path="res://assets/outside/Tiny Wonder Farm Free/Tiny Wonder Farm Free/objects&items/plants free.png" id="6_ywmnl"]
-[ext_resource type="PackedScene" path="res://pig.tscn" id="7_xx700"]
+[ext_resource type="PackedScene" uid="uid://cbsktm4xl7npg" path="res://pig.tscn" id="7_xx700"]
 [ext_resource type="Texture2D" uid="uid://ccrbx6w565fwj" path="res://assets/initial/TX Tileset Grass.png" id="8_57jky"]
 [ext_resource type="Script" path="res://scenes/pig2.gd" id="8_strgi"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="8_ushl6"]
@@ -20,7 +20,8 @@
 [ext_resource type="Script" path="res://scenes/cow.gd" id="10_8ijs1"]
 [ext_resource type="Texture2D" uid="uid://b83ir72aqrua3" path="res://assets/initial/TX Plant.png" id="11_lcuk2"]
 [ext_resource type="PackedScene" uid="uid://c0hgo7ka1ue74" path="res://scenes/chimken.tscn" id="12_lmtwp"]
-[ext_resource type="PackedScene" path="res://scenes/addict.tscn" id="21_4bfa1"]
+[ext_resource type="PackedScene" uid="uid://bqjn06mtsrjjg" path="res://scenes/addict.tscn" id="21_4bfa1"]
+[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="22_3qtyn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gd2yt"]
 texture = ExtResource("2_mwyag")
@@ -5855,4 +5856,10 @@ layer_2/tile_data = PackedInt32Array(7, 196611, 4, 131079, 196611, 4, 262151, 19
 
 [node name="Player" parent="." instance=ExtResource("8_ushl6")]
 texture_filter = 1
-position = Vector2(160.2, 156.2)
+position = Vector2(159, 108.4)
+
+[node name="TeleportArea" parent="." instance=ExtResource("22_3qtyn")]
+position = Vector2(136.8, -11.6)
+x_pos = 160
+y_pos = 151
+new_scene_path = "res://scenes/entrance.tscn"
