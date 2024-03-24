@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://ctuh5vortkgbi"
+path="res://.godot/imported/west_wing_aristocrat.dialogue-73ca9724414c29a21ddb9b378b03a670.tres"
+
+[deps]
+
+source_file="res://interacts/west_wing_aristocrat.dialogue"
+dest_files=["res://.godot/imported/west_wing_aristocrat.dialogue-73ca9724414c29a21ddb9b378b03a670.tres"]
+
+[params]
+
+defaults=true

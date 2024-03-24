@@ -1,0 +1,13 @@
+~ main
+if (Global.get_value("west_wing_bro") == 0):
+	Master of Coin: The treasury is on its last legs… We must address this problem immediately… Crypto is the future…
+	set Global.update("west_wing_bro", 1)
+elif (Global.get_value("west_wing_bro") == 1):
+	Master of Coin: If we ever need a quick injection of wealth, we could always slaughter a significant portion of the livestock.
+	set Global.update("west_wing_bro", 2)
+else:
+	Master of Coin: I’ve always wanted to play Scrooge McDuck, and with the current state of the treasury I can! What color is your bugatti?
+
+set Global.is_interacting = 0
+
+=> END

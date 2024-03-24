@@ -9,7 +9,10 @@ var is_started = 0
 # 1 = first option
 # 2 = second option
 var map = {
-	"first" : 0
+	"first" : 0,
+	"west_wing_chill" : 0,
+	"west_wing_bro" : 0,
+	"west_wing_aristocrat" : 0
 }
 
 func update(key, value):

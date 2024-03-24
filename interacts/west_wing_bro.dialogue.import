@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bynn1jxce3r76"
+path="res://.godot/imported/west_wing_bro.dialogue-4dd06dfcdca91c04febaa0293d2401aa.tres"
+
+[deps]
+
+source_file="res://interacts/west_wing_bro.dialogue"
+dest_files=["res://.godot/imported/west_wing_bro.dialogue-4dd06dfcdca91c04febaa0293d2401aa.tres"]
+
+[params]
+
+defaults=true
