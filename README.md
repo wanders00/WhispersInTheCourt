@@ -20,6 +20,10 @@ A silly game made in Godot during a GameJam
 
 [Apple](https://xxashuraxx.itch.io/apple) - by xXAshuraXx
 
+[Dungeon tileset II](https://pixel-poem.itch.io/dungeon-assetpuck) - by Pixel_Poem
+
+[2d Pixel Art Training Dummy Sprites](https://elthen.itch.io/2d-pixel-art-training-dummy) - by Elthen's Pixel Art Shop
+
 ### Images
 
 [Pixel Art Backgrounds Pack](https://lashman.itch.io/pixel-art-backgrounds-pack) by lashman
@@ -32,3 +36,10 @@ A silly game made in Godot during a GameJam
 
 [Genealogy 1 Font](https://www.fontspace.com/genealogy-1-font-f5928) - by Digital Magic
 
+# Authors
+
+- David Schön
+- Parisa Babaei
+- William Andersson 
+- Vasilena Karaivanova
+- Adam Faundez Laurokari
