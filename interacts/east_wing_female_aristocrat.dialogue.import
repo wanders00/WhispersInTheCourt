@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://du07iroevar1"
+path="res://.godot/imported/east_wing_female_aristocrat.dialogue-4c4c40f36f21a14464287c5a22f3d336.tres"
+
+[deps]
+
+source_file="res://interacts/east_wing_female_aristocrat.dialogue"
+dest_files=["res://.godot/imported/east_wing_female_aristocrat.dialogue-4c4c40f36f21a14464287c5a22f3d336.tres"]
+
+[params]
+
+defaults=true

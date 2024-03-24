@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://x84r0365s0va"
+path="res://.godot/imported/entrance_duke.dialogue-9da299884a9929179925fb1d21484e52.tres"
+
+[deps]
+
+source_file="res://interacts/entrance_duke.dialogue"
+dest_files=["res://.godot/imported/entrance_duke.dialogue-9da299884a9929179925fb1d21484e52.tres"]
+
+[params]
+
+defaults=true

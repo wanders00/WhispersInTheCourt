@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c0o4yurwgehns"
+path="res://.godot/imported/training_area_prince.dialogue-2de4806ab4989d4712021b18eaffb632.tres"
+
+[deps]
+
+source_file="res://interacts/training_area_prince.dialogue"
+dest_files=["res://.godot/imported/training_area_prince.dialogue-2de4806ab4989d4712021b18eaffb632.tres"]
+
+[params]
+
+defaults=true

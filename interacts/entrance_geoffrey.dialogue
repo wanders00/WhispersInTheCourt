@@ -1,0 +1,19 @@
+~ entrance_geoffrey
+
+Sir Geoffrey (left): This king is not fit to rule, he keeps trailing off when giving speeches.
+Lord Cedric (right): Hm, that sounds familiar.
+	
+Do you want to keep eavesdropping?
+- Continue...
+	Sir Geoffrey (left): He knows no responsibility, this kingdom must be saved from this lineage.
+	
+	Do you want to keep eavesdropping?
+	- Continue...
+		Sir Geoffrey (left): We could make it look like an accident… a stray arrow in the training area…
+		Lord Cedric (right): Uuuuuuuhhhhh... 
+	- No, this is boring.
+- No, this is boring.
+	
+set Global.is_interacting = 0
+
+=> END

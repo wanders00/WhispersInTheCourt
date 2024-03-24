@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://dusv75puh6ih3"
+path="res://.godot/imported/runes.dialogue-7c6aebbb051b24d86caf34f7b25c9b75.tres"
+
+[deps]
+
+source_file="res://interacts/runes.dialogue"
+dest_files=["res://.godot/imported/runes.dialogue-7c6aebbb051b24d86caf34f7b25c9b75.tres"]
+
+[params]
+
+defaults=true

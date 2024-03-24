@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cf2wy8uaqkpbr"
+path="res://.godot/imported/east_wing_duck.dialogue-9e4dcc5b9412e34f93b1c2d472fbbc8e.tres"
+
+[deps]
+
+source_file="res://interacts/east_wing_duck.dialogue"
+dest_files=["res://.godot/imported/east_wing_duck.dialogue-9e4dcc5b9412e34f93b1c2d472fbbc8e.tres"]
+
+[params]
+
+defaults=true
