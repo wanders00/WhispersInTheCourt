@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://vewrbagolm4" path="res://assets/outside/Tiny Wonder Farm Free/Tiny Wonder Farm Free/objects&items/items free.png" id="5_3wruf"]
 [ext_resource type="Texture2D" uid="uid://c3wpobu00tx1m" path="res://assets/initial/apple.png" id="5_qk8v7"]
 [ext_resource type="Texture2D" uid="uid://cuiplnnehqehs" path="res://assets/outside/Tiny Wonder Farm Free/Tiny Wonder Farm Free/objects&items/plants free.png" id="6_ywmnl"]
-[ext_resource type="PackedScene" uid="uid://cbsktm4xl7npg" path="res://pig.tscn" id="7_xx700"]
+[ext_resource type="PackedScene" path="res://pig.tscn" id="7_xx700"]
 [ext_resource type="Texture2D" uid="uid://ccrbx6w565fwj" path="res://assets/initial/TX Tileset Grass.png" id="8_57jky"]
 [ext_resource type="Script" path="res://scenes/pig2.gd" id="8_strgi"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="8_ushl6"]
@@ -20,8 +20,8 @@
 [ext_resource type="Script" path="res://scenes/cow.gd" id="10_8ijs1"]
 [ext_resource type="Texture2D" uid="uid://b83ir72aqrua3" path="res://assets/initial/TX Plant.png" id="11_lcuk2"]
 [ext_resource type="PackedScene" uid="uid://c0hgo7ka1ue74" path="res://scenes/chimken.tscn" id="12_lmtwp"]
-[ext_resource type="PackedScene" uid="uid://bqjn06mtsrjjg" path="res://scenes/addict.tscn" id="21_4bfa1"]
-[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="22_3qtyn"]
+[ext_resource type="PackedScene" path="res://scenes/addict.tscn" id="21_4bfa1"]
+[ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="22_3qtyn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gd2yt"]
 texture = ExtResource("2_mwyag")
@@ -5768,7 +5768,7 @@ layer_0/name = "house"
 layer_0/z_index = 1
 layer_0/tile_data = PackedInt32Array(-524280, 0, 4, -458744, 0, 5, -393208, 0, 6, -327672, 0, 7, -589815, 65536, 3, -524279, 65536, 4, -458743, 65536, 5, -393207, 65536, 6, -327671, 65536, 7, -589814, 131072, 3, -524278, 131072, 4, -458742, 131072, 5, -393206, 131072, 6, -327670, 131072, 7, -589813, 196608, 3, -524277, 196608, 4, -458741, 196608, 5, -393205, 196608, 6, -327669, 196608, 7)
 layer_1/name = "fence"
-layer_1/tile_data = PackedInt32Array(-327672, 65537, 2, -327673, 65537, 2, -327674, 65537, 2, -327675, 65537, 2, -327676, 1, 0, -262140, 1, 1, -196604, 1, 1, -131068, 1, 1, -65532, 1, 1, 4, 1, 1, 65540, 1, 2, 65541, 65537, 2, 65542, 65537, 2, 65543, 65537, 2, 65544, 65537, 2, 65545, 65537, 2, 65546, 65537, 2, 65547, 131073, 2, 11, 131073, 1, -65525, 131073, 1, -131061, 131073, 1, -196597, 131073, 1, -262133, 131073, 1, -327669, 131073, 0)
+layer_1/tile_data = PackedInt32Array(-327672, 65537, 2, -327673, 65537, 2, -327674, 65537, 2, -327675, 65537, 2, -327676, 1, 0, -262140, 1, 1, -196604, 1, 1, -131068, 1, 1, -65532, 1, 1, 4, 1, 1, 65540, 1, 2, 65541, 65537, 2, 65542, 65537, 2, 65543, 65537, 2, 65544, 65537, 2, 65545, 65537, 2, 65546, 65537, 2, 65547, 131073, 2, 11, 131073, 1, -65525, 131073, 1, -131061, 131073, 1, -196597, 131073, 1, -262133, 131073, 1, -327669, 131073, 0, -589833, 1, 0, -524297, 1, 1, -458761, 1, 1, -393225, 1, 1, -327689, 1, 1, -262153, 1, 1, -196617, 1, 1, -131081, 1, 1, -65545, 1, 1, -9, 1, 1, 65527, 1, 1, 131063, 1, 1, 196599, 1, 1, 262136, 65537, 2, 262137, 65537, 2, 262138, 65537, 2, 262139, 65537, 2, 262140, 65537, 2, 262141, 65537, 2, 262142, 65537, 2, 262143, 65537, 2, 196608, 65537, 2, 196609, 65537, 2, 196610, 65537, 2, 196611, 65537, 2, 196612, 65537, 2, 196613, 65537, 2, 196614, 65537, 2, 196615, 65537, 2, 196616, 65537, 2, 196617, 65537, 2, 196618, 65537, 2, 196619, 65537, 2, 196620, 65537, 2, 131085, 131073, 1, 65549, 131073, 1, 13, 131073, 1, -65523, 131073, 1, -131059, 131073, 1, -196595, 131073, 1, -393203, 131073, 1, -458739, 131073, 1, -524275, 131073, 1, -589811, 131073, 1, -262131, 131073, 1, -327667, 131073, 1, -589832, 65537, 2, -589831, 65537, 2, -589830, 65537, 2, -589829, 65537, 2, -589828, 65537, 2, -589827, 65537, 2, -589826, 65537, 2, -589825, 65537, 2, -655358, 65537, 2, -655357, 65537, 2, -655356, 65537, 2, -655355, 65537, 2, -655354, 65537, 2, -655353, 65537, 2, -655352, 65537, 2, -655351, 65537, 2, -655350, 65537, 2, -655349, 65537, 2, -655348, 65537, 2, -655347, 131073, 0, 262135, 1, 2, 196621, 131073, 2)
 layer_2/name = "bush"
 layer_2/tile_data = PackedInt32Array(-524283, 393217, 0, -458747, 393217, 1, -524282, 458753, 0, -458746, 458753, 1, -524281, 524289, 0, -458745, 524289, 1)
 layer_3/name = "bush flower"

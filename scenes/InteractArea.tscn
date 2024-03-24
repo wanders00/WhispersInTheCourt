@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/InteractArea.gd" id="1_x5m8o"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4utu"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_5y4q2"]
+radius = 20.0
 
 [node name="InteractArea" type="Area2D"]
 collision_layer = 2
@@ -11,4 +12,4 @@ monitoring = false
 script = ExtResource("1_x5m8o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_y4utu")
+shape = SubResource("CircleShape2D_5y4q2")
