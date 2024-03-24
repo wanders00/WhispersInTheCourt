@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://c54h3i5l8ugam"]
+
+[ext_resource type="Texture2D" uid="uid://e2de2wvlh0p5" path="res://assets/people/duke_of_westword0.png" id="1_ae4vi"]
+[ext_resource type="Texture2D" uid="uid://dvd7qhmpo4tgs" path="res://assets/people/duke_of_westword1.png" id="2_u0omi"]
+[ext_resource type="Texture2D" uid="uid://c5jwk4gc4no5a" path="res://assets/people/duke_of_westword2.png" id="3_d4cio"]
+[ext_resource type="Texture2D" uid="uid://db7dftsvmvjuq" path="res://assets/people/duke_of_westword3.png" id="4_4o01q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6ktj"]
+size = Vector2(30, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3mhfh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ae4vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_u0omi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_d4cio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4o01q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Duke of Westword" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_p6ktj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_3mhfh")
+frame_progress = 0.0682272

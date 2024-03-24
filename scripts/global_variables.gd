@@ -3,6 +3,7 @@ extends Node
 var is_interacting = 0
 var x_pos = 0
 var y_pos = 0
+var is_started = 0
 
 # 0 = have not interacted
 # 1 = first option

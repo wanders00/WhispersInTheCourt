@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://dlf2k6yybi2dx"]
+[gd_scene load_steps=21 format=3 uid="uid://0jxuxqn572ka"]
 
+[ext_resource type="Script" path="res://scripts/west_wing.gd" id="1_1tjiq"]
 [ext_resource type="Texture2D" uid="uid://bp20ah8anobcb" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Floor_1.png" id="1_wy3gv"]
 [ext_resource type="Texture2D" uid="uid://tpg107esom7i" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Castle_1.png" id="2_hjpi6"]
 [ext_resource type="Texture2D" uid="uid://uqpapie2056o" path="res://assets/Top_Down_Kingdom_Tileset/Others/Decor.png" id="2_ymag7"]
@@ -10,6 +11,7 @@
 [ext_resource type="Script" path="res://scripts/bro_body_2d.gd" id="6_mdord"]
 [ext_resource type="PackedScene" uid="uid://7ma87c3d2sy0" path="res://scenes/bald_body_2d.tscn" id="7_tpdnw"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="9_eij0e"]
+[ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="12_mayfi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wdrjp"]
 texture = ExtResource("1_wy3gv")
@@ -318,6 +320,7 @@ sources/0 = SubResource("TileSetAtlasSource_p2kir")
 [node name="WestWing" type="Node2D"]
 position = Vector2(3, -54)
 scale = Vector2(5, 5)
+script = ExtResource("1_1tjiq")
 
 [node name="GroundTileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -354,10 +357,15 @@ layer_0/tile_data = PackedInt32Array(327687, 131072, 3, 327686, 131072, 3, 32768
 [node name="Player" parent="." instance=ExtResource("9_eij0e")]
 z_index = 2
 texture_filter = 1
-position = Vector2(96.4, 123.4)
-scale = Vector2(1, 1)
+position = Vector2(202.6, 112.4)
 
 [node name="BaldBody2D" parent="." instance=ExtResource("7_tpdnw")]
 z_index = 2
 texture_filter = 1
 position = Vector2(134.8, 130.8)
+
+[node name="TeleportArea" parent="." instance=ExtResource("12_mayfi")]
+position = Vector2(324.4, 95.4)
+x_pos = 273
+y_pos = 375
+new_scene_path = "res://scenes/throne_room.tscn"
