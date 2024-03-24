@@ -371,19 +371,18 @@ new_scene_path = "res://scenes/throne_room.tscn"
 
 [node name="InteractArea" parent="." instance=ExtResource("13_mi2ho")]
 position = Vector2(48.8, 117.6)
-interact_label = "Press E to interact"
+interact_label = "Press 'E' to interact"
 dialogue_path = "res://interacts/west_wing_chill.dialogue"
 dialogue_name = "main"
 
 [node name="InteractArea2" parent="." instance=ExtResource("13_mi2ho")]
 position = Vector2(264.2, 149.4)
-scale = Vector2(1, 1)
-interact_label = "Press E to interact"
+interact_label = "Press 'E' to interact"
 dialogue_path = "res://interacts/west_wing_bro.dialogue"
 dialogue_name = "main"
 
 [node name="InteractArea3" parent="." instance=ExtResource("13_mi2ho")]
 position = Vector2(135, 131.2)
-interact_label = "Press E to interact"
+interact_label = "Press 'E' to interact"
 dialogue_path = "res://interacts/west_wing_aristocrat.dialogue"
 dialogue_name = "main"

@@ -2312,18 +2312,18 @@ new_scene_path = "res://scenes/training_area.tscn"
 
 [node name="MilitaryInteract" parent="." instance=ExtResource("14_o1gu5")]
 position = Vector2(54.4, 38)
-interact_label = "E"
+interact_label = "Press 'E' interact"
 dialogue_path = "res://interacts/east_wing_weapons_master.dialogue"
 dialogue_name = "east_wing_weapons_master"
 
 [node name="duckInteract" parent="." instance=ExtResource("14_o1gu5")]
 position = Vector2(109.8, 97.6)
-interact_label = "E"
+interact_label = "Press 'E' interact"
 dialogue_path = "res://interacts/east_wing_duck.dialogue"
 dialogue_name = "east_wing_duck"
 
 [node name="AristocratInteract" parent="." instance=ExtResource("14_o1gu5")]
 position = Vector2(279, 98.4)
-interact_label = "E"
+interact_label = "Press 'E' interact"
 dialogue_path = "res://interacts/east_wing_female_aristocrat.dialogue"
 dialogue_name = "east_wing_female_aristocrat"
