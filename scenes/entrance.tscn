@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bve730vvycbg"]
+[gd_scene load_steps=25 format=3 uid="uid://bve730vvycbg"]
 
 [ext_resource type="Texture2D" uid="uid://tpg107esom7i" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Castle_1.png" id="1_ag85f"]
 [ext_resource type="Script" path="res://scripts/entrance.gd" id="1_ouxt4"]
@@ -14,7 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://c54h3i5l8ugam" path="res://scenes/duke_of_westword.tscn" id="10_n4iu5"]
 [ext_resource type="Script" path="res://scripts/duke_of_westword.gd" id="11_bjdo6"]
 [ext_resource type="PackedScene" uid="uid://cv1vyhn2m4be" path="res://scenes/sir_geoffrey.tscn" id="12_u80ca"]
-[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="15_jluyc"]
+[ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="15_jluyc"]
+[ext_resource type="Script" path="res://scenes/sir_geoffrey.gd" id="15_jm55i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ndn0r"]
 texture = ExtResource("1_ag85f")
@@ -595,6 +596,7 @@ script = ExtResource("11_bjdo6")
 
 [node name="Sir Geoffrey" parent="." instance=ExtResource("12_u80ca")]
 position = Vector2(94.8, 55.4)
+script = ExtResource("15_jm55i")
 
 [node name="TeleportArea" parent="." instance=ExtResource("15_jluyc")]
 position = Vector2(159.8, -10.4)
@@ -604,7 +606,6 @@ new_scene_path = "res://scenes/throne_room.tscn"
 
 [node name="TeleportArea2" parent="." instance=ExtResource("15_jluyc")]
 position = Vector2(160.2, 193)
-scale = Vector2(1, 1)
 x_pos = 137
 y_pos = 19
 new_scene_path = "res://scenes/outside.tscn"
