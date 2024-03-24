@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://uqpapie2056o" path="res://assets/Top_Down_Kingdom_Tileset/Others/Decor.png" id="8_kijj1"]
 [ext_resource type="Texture2D" uid="uid://cyromiqrl0tq4" path="res://assets/Top_Down_Kingdom_Tileset/Others/Garden.png" id="9_qqrtr"]
 [ext_resource type="PackedScene" uid="uid://bc3d3its0n8no" path="res://scenes/InteractArea.tscn" id="11_cccb1"]
-[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="13_ch1cb"]
+[ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="13_ch1cb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gv5id"]
 texture = ExtResource("1_chlhs")
