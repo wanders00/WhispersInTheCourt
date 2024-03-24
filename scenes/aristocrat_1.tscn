@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://by0y16bnc7xsi"]
+
+[ext_resource type="Texture2D" uid="uid://cuo1pdg30tjdg" path="res://assets/people/sympathetic_aristocrat0.png" id="1_nmvcf"]
+[ext_resource type="Texture2D" uid="uid://ckd1wn3ia0auh" path="res://assets/people/sympathetic_aristocrat1.png" id="2_k6kny"]
+[ext_resource type="Texture2D" uid="uid://c47og7phxb8wj" path="res://assets/people/sympathetic_aristocrat2.png" id="3_0ra23"]
+[ext_resource type="Texture2D" uid="uid://bk3b6jsnlimvf" path="res://assets/people/sympathetic_aristocrat3.png" id="4_gqeuh"]
+[ext_resource type="Texture2D" uid="uid://do70prbqiuvd5" path="res://assets/people/sympathetic_aristocrat4.png" id="5_odvn7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7moy6"]
+size = Vector2(20, 29)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fe1dq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nmvcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_k6kny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0ra23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gqeuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_odvn7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Lord Cedric" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_7moy6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_fe1dq")
+frame_progress = 0.164351
