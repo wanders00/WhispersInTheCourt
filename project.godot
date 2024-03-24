@@ -60,7 +60,7 @@ interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://interacts/a.dialogue", "res://interacts/outside_addict.dialogue", "res://interacts/east_wing_duck.dialogue", "res://interacts/east_wing_weapons_master.dialogue", "res://interacts/east_wing_female_aristocrat.dialogue")
+locale/translations_pot_files=PackedStringArray("res://interacts/a.dialogue", "res://interacts/outside_addict.dialogue", "res://interacts/east_wing_duck.dialogue", "res://interacts/east_wing_weapons_master.dialogue", "res://interacts/east_wing_female_aristocrat.dialogue", "res://interacts/west_wing_chill.dialogue", "res://interacts/west_wing_bro.dialogue", "res://interacts/west_wing_aristocrat.dialogue")
 
 [layer_names]
 
