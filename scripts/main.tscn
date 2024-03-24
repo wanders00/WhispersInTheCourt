@@ -295,10 +295,8 @@ format = 2
 [node name="InteractArea" parent="." instance=ExtResource("11_cccb1")]
 position = Vector2(81, 0)
 interact_label = "Press 'E' to interact"
-interact_texts = ["Hello", "guys"]
-interact_options = ["xd", "123"]
-first_have_interacted_text = "no you stink"
-second_have_interacted_text = "hello friend"
+dialogue_path = "res://interacts/a.dialogue"
+dialogue_name = "main"
 global_key = "first"
 
 [node name="TeleportArea" parent="." instance=ExtResource("13_ch1cb")]

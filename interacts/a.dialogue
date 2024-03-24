@@ -1,0 +1,15 @@
+~ main
+if Global.get_value("first") == 0
+	Addict: Hey, wanna buy some apples?
+	- No thanks.
+		set Global.update("first", 1)
+	- Sure!
+		set Global.update("first", 2)
+else:
+	Addict: hello
+	- No thanks.
+	- Sure!
+
+set Global.is_interacting = 0
+
+=> END

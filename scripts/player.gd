@@ -51,34 +51,13 @@ func execute_interaction():
 		if Global.is_interacting != 0:
 			return
 		
+		print("Starting chat scene...")
+		
 		Global.is_interacting = 1
 		
 		var current = all_interactions[0]
-		print("Starting chat scene...")
-		var chat_scene
 		
-		var has_interacted = Global.get_value(current.global_key)
-		if has_interacted != 0:
-			chat_scene = load("res://interacts/text_box-no-dialogue.tscn").instantiate()
-			if has_interacted == 1:
-				chat_scene.queue_text(current.first_have_interacted_text)
-			else:
-				chat_scene.queue_text(current.second_have_interacted_text)
-			add_child(chat_scene)
-			return
-		
-		if current.interact_options:
-			chat_scene = load("res://interacts/text_box-2-dialogue.tscn").instantiate()
-			chat_scene.set_options(current.interact_options[0], current.interact_options[1])
-		else:
-			chat_scene = load("res://interacts/text_box-no-dialogue.tscn").instantiate()
-		
-		for text in current.interact_texts:
-			chat_scene.queue_text(text)
-		if current.interact_options:
-			chat_scene.set_options(current.interact_options[0], current.interact_options[1])
-		chat_scene.set_global_key(current.global_key)
-		add_child(chat_scene)
+		DialogueManager.show_example_dialogue_balloon(load(current.dialogue_path), current.dialogue_name)
 
 func _on_teleport_area_area_entered(area):
 	Global.x_pos = area.x_pos
