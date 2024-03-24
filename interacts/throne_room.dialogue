@@ -31,6 +31,7 @@ elif Global.get_value("throne_room_princess") == 1
 		Princess: Can I help you with anything?
 		- No, just checking in on you. Have a nice day milady.
 		- Yes. I had question.
+			Princess: Go ahead, ask!
 			- What´s the cats name?
 				Princess: The cat’s name is 'Larry', isn’t he cute!!
 				set Global.update("throne_room_cat", 1)
