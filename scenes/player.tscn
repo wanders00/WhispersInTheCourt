@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://n1rttipesqfx"]
+[gd_scene load_steps=24 format=3 uid="uid://n1rttipesqfx"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_c4dhw"]
 [ext_resource type="Texture2D" uid="uid://c1pi2xlr25ea8" path="res://assets/people/player/player_idle0.png" id="2_x7xd3"]
@@ -19,7 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://begjawhk2o6x2" path="res://assets/people/player/player_walking_back1.png" id="17_khxl2"]
 [ext_resource type="Texture2D" uid="uid://dexmv6jw58lhf" path="res://assets/people/player/player_walking_back2.png" id="18_0uger"]
 [ext_resource type="Texture2D" uid="uid://bt5vuy1rspfpk" path="res://assets/people/player/player_walking_back3.png" id="19_lb67a"]
-[ext_resource type="AudioStream" uid="uid://d1tq5y4ebjtty" path="res://dance-of-gypsy-monkey-giulio-fazio-main-version-01-21-15246.mp3" id="20_n1qye"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1h6bf"]
 animations = [{
@@ -163,10 +162,6 @@ monitorable = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Teleport Components/Teleport Area"]
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_coltw")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("20_n1qye")
-autoplay = true
 
 [connection signal="area_entered" from="Interaction Components/Interaction Area" to="." method="_on_interaction_area_area_entered"]
 [connection signal="area_exited" from="Interaction Components/Interaction Area" to="." method="_on_interaction_area_area_exited"]
