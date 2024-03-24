@@ -5,5 +5,5 @@ extends CharacterBody2D
 func _ready():
 	sprite_2d.play("default")
 
-func _process(delta):
+func _process(_delta):
 	pass

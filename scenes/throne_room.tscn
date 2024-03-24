@@ -1,22 +1,22 @@
-[gd_scene load_steps=24 format=3 uid="uid://8yh1hegq1mlj"]
+[gd_scene load_steps=25 format=3 uid="uid://8yh1hegq1mlj"]
 
 [ext_resource type="Texture2D" uid="uid://bp20ah8anobcb" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Floor_1.png" id="1_bh466"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="1_kd2d7"]
 [ext_resource type="Texture2D" uid="uid://uqpapie2056o" path="res://assets/Top_Down_Kingdom_Tileset/Others/Decor.png" id="2_n6pmy"]
 [ext_resource type="Texture2D" uid="uid://88q8qtlxlw1i" path="res://assets/Top_Down_Kingdom_Tileset/Others/throne0.png" id="3_bkrgs"]
-[ext_resource type="PackedScene" uid="uid://b3i7ouqnjeysr" path="res://scenes/king_body_2d.tscn" id="4_yxh8w"]
+[ext_resource type="PackedScene" path="res://scenes/king_body_2d.tscn" id="4_yxh8w"]
 [ext_resource type="Texture2D" uid="uid://cyromiqrl0tq4" path="res://assets/Top_Down_Kingdom_Tileset/Others/Garden.png" id="5_46lyl"]
 [ext_resource type="Texture2D" uid="uid://tpg107esom7i" path="res://assets/Top_Down_Kingdom_Tileset/Tilesets/Castle_1.png" id="5_h5hnp"]
 [ext_resource type="Script" path="res://scripts/king_body_2d.gd" id="6_pip0i"]
-[ext_resource type="PackedScene" uid="uid://bquqduv6w3jft" path="res://scenes/knight_body_2d.tscn" id="7_wf6lv"]
-[ext_resource type="PackedScene" uid="uid://dl8t3jyl18ws5" path="res://scenes/princess_body_2d.tscn" id="9_6a254"]
+[ext_resource type="PackedScene" path="res://scenes/knight_body_2d.tscn" id="7_wf6lv"]
+[ext_resource type="PackedScene" path="res://scenes/princess_body_2d.tscn" id="9_6a254"]
 [ext_resource type="Script" path="res://scripts/princess_body_2d.gd" id="9_08dfa"]
-[ext_resource type="PackedScene" uid="uid://duseo4e4ks15d" path="res://scenes/cat_body_2d.tscn" id="11_8pjnd"]
-[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="13_3igc4"]
+[ext_resource type="PackedScene" path="res://scenes/cat_body_2d.tscn" id="11_8pjnd"]
+[ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="13_3igc4"]
+[ext_resource type="PackedScene" uid="uid://bc3d3its0n8no" path="res://scenes/InteractArea.tscn" id="14_522wv"]
 
 [sub_resource type="GDScript" id="GDScript_ppclw"]
 script/source = "extends Node2D
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,10 +25,11 @@ func _ready():
 		$Player.position.y = Global.y_pos
 	else:
 		Global.is_started = 1
-
+		Global.is_interacting = 0
+		DialogueManager.show_example_dialogue_balloon(load(\"res://interacts/throne_room.dialogue\"), \"start\")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 "
 
@@ -399,3 +400,33 @@ position = Vector2(408.4, 510.6)
 x_pos = 160
 y_pos = 19
 new_scene_path = "res://scenes/entrance.tscn"
+
+[node name="InteractArea_Princess" parent="." instance=ExtResource("14_522wv")]
+position = Vector2(344.6, 450.4)
+interact_label = "Press 'E' to interact"
+dialogue_path = "res://interacts/throne_room.dialogue"
+dialogue_name = "princess"
+
+[node name="InteractArea_LarryTheCat" parent="." instance=ExtResource("14_522wv")]
+position = Vector2(474.8, 473.8)
+interact_label = "Press 'E' to talk to a cat"
+dialogue_path = "res://interacts/throne_room.dialogue"
+dialogue_name = "larry_the_cat"
+
+[node name="InteractArea_King" parent="." instance=ExtResource("14_522wv")]
+position = Vector2(407.6, 370.8)
+interact_label = "Press 'E' to interact"
+dialogue_path = "res://interacts/throne_room.dialogue"
+dialogue_name = "king"
+
+[node name="InteractArea_Knight1" parent="." instance=ExtResource("14_522wv")]
+position = Vector2(347.6, 342.8)
+interact_label = "Press 'E' to talk to the Knight"
+dialogue_path = "res://interacts/throne_room.dialogue"
+dialogue_name = "knight"
+
+[node name="InteractArea_Knight2" parent="." instance=ExtResource("14_522wv")]
+position = Vector2(469.4, 343.6)
+interact_label = "Press 'E' to talk to the Knight"
+dialogue_path = "res://interacts/throne_room.dialogue"
+dialogue_name = "knight"

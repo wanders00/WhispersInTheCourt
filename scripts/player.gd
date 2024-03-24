@@ -42,6 +42,8 @@ func _on_interaction_area_area_exited(area):
 
 func update_interactions():
 	if all_interactions:
+		if Global.is_interacting == 1:
+			return
 		interact_label.text = all_interactions[0].interact_label
 	else: 
 		interact_label.text = ""

@@ -1,0 +1,140 @@
+~ start
+
+set Global.is_interacting = 1
+
+King: You’re my new advisor… sure.. We are in an unstable time, and there have been rumors usurp my rule.
+King: You need to put an end to any whispers of change and keep me on my throne. 
+King: Consult, eavesdrop, and converse to dissipate any threats.
+- Whatever bro...
+	King: ....
+	King: Remember that I can have you executed.
+- Yes my liege!
+
+King: By the way, the strangest thing came to me in a dream, I think it was:
+King: use WASD to move and E to interact.
+
+King: Go on now!
+
+set Global.is_interacting = 0
+
+=> END
+
+~ princess
+
+if Global.get_value("throne_room_princess") == 0
+	Princess: Anyways, you’re taking good care of my father, right? He’s almost too old to be leading an entire country.
+	Princess: I'll see you around.
+	set Global.update("throne_room_princess", 1)
+elif Global.get_value("throne_room_princess") == 1
+	Princess: Hello Again!
+	- Hello!
+		Princess: Can I help you with anything?
+		- No, just checking in on you. Have a nice day milady.
+		- Yes. I had question.
+			- What´s the cats name?
+				Princess: The cat’s name is 'Larry', isn’t he cute!!
+				set Global.update("throne_room_cat", 1)
+			- What have you been up to recently?
+				Princess: I’ve been learning to play the lute. It’s harder than it looks, but I hope to perform a song for my father’s birthday.
+		Princess: Alright. I have 'royal' things to do. We can continue this later.
+	- Goodbye!
+	set Global.update("throne_room_princess", 2)
+else:
+	Princess: I am busy, need to practice the lute. We can talk later. Good luck in your endeavours!
+
+set Global.is_interacting = 0
+
+=> END
+
+~ larry_the_cat
+
+if Global.get_value("throne_room_cat") == 0
+	Cat: *meows*
+elif Global.get_value("throne_room_cat") == 1:
+	Larry: *meows*
+	- Pet Larry
+		Larry: *purrs*
+	set Global.update("throne_room_cat", 2)
+elif Global.get_value("throne_room_cat") == 2:
+	Larry: *more meowing*
+	Larry: Whatsup partner
+	- Huh, did you just talk?
+		Larry: *pretends like nothing*
+	- ???
+		Larry: *looks at you*
+	set Global.update("throne_room_cat", 3)
+else:
+	Larry: *meows*
+
+set Global.is_interacting = 0
+
+=> END
+
+~ king
+
+if Global.get_value("throne_room_cat") == 3
+	- Point out that Larry can apparently talk?
+		You: Larry can talk!!!!
+		King: ...
+		King: Anyways, you had something for me?
+	- Leave Larry alone. He is a good boy.
+		King: You have anything for me?
+else:
+	King: You have anything for me?
+
+- No. I am sorry I bothered you. (Continue playing)
+	set Global.is_interacting = 0
+	=> END
+- Milord, I have important news. (Point out the evil-doers! Will lead to ending of the game)
+	You: I believe someone is scheming against you!!
+	- The Master of Coin 		(in the West-Wing)
+	- The Chill Merchant 		(in the West-Wing)
+	- Baron Alaric 				(in the West-Wing)
+	- The Weapons Master 		(in the East-Wing)
+	- Sir Gideon the Valiant 	(in the East-Wing)
+	- Dame Eloise 				(in the East-Wing)
+	- Duke of Westword 			(in the Entrance)
+	- Lord Cedric 				(in the Entrance)
+	- The "Crewmate" is sus... 	(in the Entrance)
+		set Global.update("first_evildoer", 1)
+	- Sir Geoffrey 				(in the Entrance)
+		set Global.update("second_evildoer", 1)
+	- The Knights 				(in the Throne Room)
+	- Nevermind... I forgot. *awkward* (Continue playing)
+		King: ...
+		set Global.is_interacting = 0
+		=> END
+
+King: Damn. And here I thought I could trust my people!
+King: Anyone else that should meet the sword!?
+- Yes! There are more! (Try to not pick the same one...)
+	You: This one is also trying to ruin your kingdom!
+	- The Master of Coin 		(in the West-Wing)
+	- The Chill Merchant 		(in the West-Wing)
+	- Baron Alaric 				(in the West-Wing)
+	- The Weapons Master 		(in the East-Wing)
+	- Sir Gideon the Valiant 	(in the East-Wing)
+	- Dame Eloise 				(in the East-Wing)
+	- Duke of Westword 			(in the Entrance)
+	- Lord Cedric 				(in the Entrance)
+	- The "Crewmate" is sus... 	(in the Entrance)
+		set Global.update("first_evildoer", 1)
+	- Sir Geoffrey 				(in the Entrance)
+		set Global.update("second_evildoer", 1)
+	- The Knights 				(in the Throne Room)
+- No. Just that one! (End Game)
+
+King: Time to educate those who tried to wrong me!
+set Global.game_over = 1
+
+set Global.is_interacting = 0
+
+=> END
+
+~ knight
+
+Knight: [[Armor’s heavy. Wouldn’t want it any other way.|My legs used to get tired from standing, not anymore.|Stew tonight. Finally.|The young prince keeps on trying to pickpocket my sword..|Training at dawn. You in?]]
+
+set Global.is_interacting = 0
+
+=> END
