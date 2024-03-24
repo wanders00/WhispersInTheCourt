@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://cv1vyhn2m4be"]
+
+[ext_resource type="Texture2D" uid="uid://d2fe7a5iswhjg" path="res://assets/people/scheming/scheming_aristocrat0.png" id="1_n18hy"]
+[ext_resource type="Texture2D" uid="uid://7hpsni2pxa3o" path="res://assets/people/scheming/scheming_aristocrat1.png" id="2_iajav"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nw3j3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_n18hy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_iajav")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dbm85"]
+size = Vector2(20, 28)
+
+[node name="Sir Geoffrey" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_nw3j3")
+frame_progress = 0.852633
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dbm85")
