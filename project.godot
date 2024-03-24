@@ -60,7 +60,7 @@ interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://interacts/a.dialogue")
+locale/translations_pot_files=PackedStringArray("res://interacts/a.dialogue", "res://interacts/training_area_cat.dialogue", "res://interacts/training_area_prince.dialogue")
 
 [layer_names]
 
