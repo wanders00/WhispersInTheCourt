@@ -22,7 +22,7 @@ A silly game made in Godot during a GameJam
 
 ### Images
 
-Background image in menu AI generated from [pixlr.com](https://pixlr.com/image-generator)
+[Pixel Art Backgrounds Pack](https://lashman.itch.io/pixel-art-backgrounds-pack) by lashman
 
 ### Fonts
 

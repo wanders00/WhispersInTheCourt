@@ -14,7 +14,7 @@
 [ext_resource type="Script" path="res://scripts/prince.gd" id="11_6ednu"]
 [ext_resource type="PackedScene" uid="uid://n1rttipesqfx" path="res://scenes/player.tscn" id="12_s57o7"]
 [ext_resource type="PackedScene" uid="uid://dc1k064h2vajw" path="res://scenes/kitty_normal.tscn" id="13_stebg"]
-[ext_resource type="PackedScene" uid="uid://d2mhqsi0fi8w2" path="res://scenes/TeleportArea.tscn" id="14_26de6"]
+[ext_resource type="PackedScene" uid="uid://clgd0q48mhreu" path="res://scenes/TeleportArea.tscn" id="14_26de6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tg700"]
 texture = ExtResource("1_n8eih")
