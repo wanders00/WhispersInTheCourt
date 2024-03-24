@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://ddff274ygaul6"
+path="res://.godot/imported/training_area_cat.dialogue-1ec3624fb934587263650f2b4d09da08.tres"
+
+[deps]
+
+source_file="res://interacts/training_area_cat.dialogue"
+dest_files=["res://.godot/imported/training_area_cat.dialogue-1ec3624fb934587263650f2b4d09da08.tres"]
+
+[params]
+
+defaults=true

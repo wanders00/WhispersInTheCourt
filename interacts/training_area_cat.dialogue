@@ -1,0 +1,35 @@
+~ main
+if Global.get_value("training_area_cat") == 0
+	Cat: Woof!
+	- Ehh.. Shouldn't it be "meow"?
+		Cat: You were not willing to partake in my jest, because of this I have nothing more to say to you. Good Day!
+		- Whatever, you stupid cat.
+		- Noooo I'm sorry, please give me another chance!!
+		Cat: I said: GOOD DAY!!
+		set Global.update("training_area_cat", 1)
+		
+	- Woof!
+		Cat: Thank you for continuing my jest. I applaud you for still retaining your childlike innocence.
+		- OMG YOU CAN TALK!?!
+			Cat: ......
+			Cat: Meow
+			set Global.update("training_area_cat", 2)
+		- Pleased to make your acquaintance!
+			Cat: Have a wonderful day!
+			Cat: *happy meow*
+			set Global.update("training_area_cat", 3)
+
+else if Global.get_value("training_area_cat") == 1
+	Cat:  I said: GOOD DAY!!
+
+else if Global.get_value("training_area_cat") == 2
+	Cat: .............
+	Cat: Meow
+
+else if Global.get_value("training_area_cat") == 3
+	Cat: Have a wonderful day!
+	Cat: *happy meow*
+
+set Global.is_interacting = 0
+
+=> END

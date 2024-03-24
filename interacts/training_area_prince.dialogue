@@ -1,0 +1,34 @@
+~ main
+if Global.get_value("training_area_prince") == 0
+	Prince: I've been practicing archery in the gardens. A king must be skilled in more than just ruling, don't you think?
+	set Global.update("training_area_prince", 1)
+
+else if Global.get_value("training_area_prince") == 1
+	Prince: During the last council meeting, I doodled a dragon on my notes. Perhaps I should be learning governance rather than art.
+	set Global.update("training_area_prince", 2)
+
+else if Global.get_value("training_area_prince") == 2
+	Prince: There's an old oak in the royal park where I like to think. It's been standing since my grandfather's time, a silent witness to our history.
+	set Global.update("training_area_prince", 3)
+
+else if Global.get_value("training_area_prince") == 3
+	Prince: The chefs are trying a new recipe from the coastal region.. Unfortunately they never get it right on their first try.
+	Prince: I tried to cook a meal for the royal staff. Let's just say, they were very... gracious.
+	set Global.update("training_area_prince", 4)
+
+else if Global.get_value("training_area_prince") == 4
+	Prince: I found an old chess set in the library. It belonged to my great-grandfather, how can someone spend so much time doing something so boring?
+	Prince: I’ve been practicing swordplay in the gardens at dawn. There’s a unique feeling of power when wielding a sword.
+	set Global.update("training_area_prince", 5)
+
+else if Global.get_value("training_area_prince") == 5
+	Prince: Do you know the legend of the ghost knight who roams the castle halls? I've never seen him, but the stories are quite intriguing.
+	Prince: Eh, nevermind. You bore me, leave me.
+	set Global.update("training_area_prince", 6)
+
+else if Global.get_value("training_area_prince") == 6
+	Prince: Leave me be!
+
+set Global.is_interacting = 0
+
+=> END

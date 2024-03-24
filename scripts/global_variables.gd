@@ -10,6 +10,8 @@ var is_started = 0
 # 2 = second option
 var map = {
 	"first" : 0,
+	"training_area_cat" : 0,
+	"training_area_prince" : 0,
 	"east_wing_duck" : 0,
 	"east_wing_weapons_master" : 0,
 	"east_wing_female_aristocrat" : 0,
