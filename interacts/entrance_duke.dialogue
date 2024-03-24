@@ -1,0 +1,9 @@
+~ entrance_duke
+
+Duke of Westword: Do you think the cat has brain damage?
+Duke of Westword: ...
+Duke of Westword: I'm pretty sure I do.
+
+set Global.is_interacting = 0
+
+=> END

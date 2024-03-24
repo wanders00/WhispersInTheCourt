@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dodt3f22sun82"]
+
+[ext_resource type="Script" path="res://scripts/mongus.gd" id="1_2sn62"]
+[ext_resource type="Texture2D" uid="uid://d3hf51qvefx4i" path="res://assets/people/mongus/mongus0.png" id="2_pfpkf"]
+[ext_resource type="Texture2D" uid="uid://yxyycbvpqos5" path="res://assets/people/mongus/mongus1.png" id="3_n2yok"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ep7jm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pfpkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_n2yok")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8jwki"]
+size = Vector2(25, 27)
+
+[node name="mongus" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_2sn62")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ep7jm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_8jwki")

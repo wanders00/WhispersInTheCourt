@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://b84hxwgfn0wxi"
+path="res://.godot/imported/entrance_geoffrey.dialogue-4d26784aef7b46eca96be8cba9f7376a.tres"
+
+[deps]
+
+source_file="res://interacts/entrance_geoffrey.dialogue"
+dest_files=["res://.godot/imported/entrance_geoffrey.dialogue-4d26784aef7b46eca96be8cba9f7376a.tres"]
+
+[params]
+
+defaults=true

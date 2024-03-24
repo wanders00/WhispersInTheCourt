@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://3p62p36wkg5d"
+path="res://.godot/imported/mongus.dialogue-fc7095a93b20c817d3fc209d58ae2802.tres"
+
+[deps]
+
+source_file="res://interacts/mongus.dialogue"
+dest_files=["res://.godot/imported/mongus.dialogue-fc7095a93b20c817d3fc209d58ae2802.tres"]
+
+[params]
+
+defaults=true

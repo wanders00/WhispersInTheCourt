@@ -18,8 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://scripts/global_variables.gd"
-DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 BackgroundMusic="*res://scripts/backgroundMusic.gd"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 [display]
 
@@ -60,7 +60,7 @@ interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://interacts/a.dialogue")
+locale/translations_pot_files=PackedStringArray("res://interacts/a.dialogue", "res://interacts/entrance_geoffrey.dialogue", "res://interacts/entrance_duke.dialogue", "res://interacts/runes.dialogue", "res://interacts/mongus.dialogue")
 
 [layer_names]
 

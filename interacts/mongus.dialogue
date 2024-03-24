@@ -1,0 +1,11 @@
+~ mongus
+
+"Crewmate": *stares intently* she’d be beautiful in my collection.
+- Who are you?
+	"Crewmate": *nervously* I’m an.. Aristocrat.. Duh
+- What’s your favorite dish?
+	"Crewmate": I love Beef Stroganoff
+
+set Global.is_interacting = 0
+
+=> END
