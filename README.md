@@ -2,6 +2,8 @@
 
 A silly game made in Godot during a GameJam
 
+See the game page on: [itch.io](https://asgardia.itch.io/whispers-in-the-court)
+
 ## Assets Used
 
 ### TileSets
